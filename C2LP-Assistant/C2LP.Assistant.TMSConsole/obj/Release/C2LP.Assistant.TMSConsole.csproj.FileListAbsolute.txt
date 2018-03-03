@@ -1,0 +1,8 @@
+E:\develop\ColdChainLogistics\C2LP-Assistant\C2LP.Assistant.TMSConsole\bin\Release\C2LP.Assistant.TMSConsole.exe.config
+E:\develop\ColdChainLogistics\C2LP-Assistant\C2LP.Assistant.TMSConsole\bin\Release\C2LP.Assistant.TMSConsole.exe
+E:\develop\ColdChainLogistics\C2LP-Assistant\C2LP.Assistant.TMSConsole\bin\Release\C2LP.Assistant.TMSConsole.pdb
+E:\develop\ColdChainLogistics\C2LP-Assistant\C2LP.Assistant.TMSConsole\bin\Release\CuteInfoClientDLL.dll
+E:\develop\ColdChainLogistics\C2LP-Assistant\C2LP.Assistant.TMSConsole\bin\Release\LoginkExchange.dll
+E:\develop\ColdChainLogistics\C2LP-Assistant\C2LP.Assistant.TMSConsole\bin\Release\MySql.Data.dll
+E:\develop\ColdChainLogistics\C2LP-Assistant\C2LP.Assistant.TMSConsole\obj\Release\C2LP.Assistant.TMSConsole.exe
+E:\develop\ColdChainLogistics\C2LP-Assistant\C2LP.Assistant.TMSConsole\obj\Release\C2LP.Assistant.TMSConsole.pdb

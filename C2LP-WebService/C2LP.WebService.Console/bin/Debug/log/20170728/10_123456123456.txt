@@ -1,0 +1,51 @@
+2017-07-28 10:01:51:自运单临时节点信息不存在,unnecessary_node:select * from unnecessary_node where  baseId='123456123456' and operateAt>'2017-07-27 09:42:32';,结果:0
+2017-07-28 10:01:52:临时图片表不存在图片信息,sql:select * from temporarypictures where  baseId='123456123456' and operateAt>'2017-07-27 09:42:32';,结果:0
+2017-07-28 10:01:53:--------------------------------------------------------------
+2017-07-28 10:01:53:上报第三方运单节点123456123456,customerId:0,parentStorageId
+2017-07-28 10:02:00:进入创建运单节点逻辑123456123456,操作时间2017/7/27 星期四 上午 9:42:32
+2017-07-28 10:02:00:(上报节点)NodeNumber=123456123456;Content=【浙B287R6】 配送员已收取快件 准备运往【丽水】;CustomerId=0
+2017-07-28 10:02:00:自运单 :
+2017-07-28 10:02:00:查询运单是否存在:select * from waybill_base where number = '123456123456' order by id desc limit 1
+2017-07-28 10:02:00:当前运单存在,开始添加节点
+2017-07-28 10:02:00:查询该运单已有的所有节点:select id, convert(baseId, CHAR) as baseId ,operateAt,storageId,storageName,content,arrived from waybill_node where baseId = 6165,查询到的节点条数：0
+2017-07-28 10:02:00:添加节点:insert into waybill_node (baseId,operateAt,storageId,storageName,content,arrived,parentStorageId,handleFlag) values ('6165', '2017-07-27 09:42:32', '101', '浙B287R6', '【浙B287R6】 配送员已收取快件 准备运往【丽水】', '1','0','0');
+2017-07-28 10:02:01:添加结果：True
+2017-07-28 10:02:02:退出节点逻辑
+2017-07-28 10:02:02:--------------------------------------------------------------
+2017-07-28 10:02:06:--------------------------------------------------------------
+2017-07-28 10:02:06:上报第三方运单节点123456123456,customerId:0,parentStorageId
+2017-07-28 10:02:09:进入创建运单节点逻辑123456123456,操作时间2017/7/27 星期四 上午 9:46:01
+2017-07-28 10:02:09:(上报节点)NodeNumber=123456123456;Content=【浙BD55Y3】 配送员【邵铁刚】已出发 准备运往【丽水】;CustomerId=0
+2017-07-28 10:02:09:自运单 :
+2017-07-28 10:02:09:查询运单是否存在:select * from waybill_base where number = '123456123456' order by id desc limit 1
+2017-07-28 10:02:09:当前运单存在,开始添加节点
+2017-07-28 10:02:09:查询该运单已有的所有节点:select id, convert(baseId, CHAR) as baseId ,operateAt,storageId,storageName,content,arrived from waybill_node where baseId = 6165,查询到的节点条数：1
+2017-07-28 10:02:09:添加节点:insert into waybill_node (baseId,operateAt,storageId,storageName,content,arrived,parentStorageId,handleFlag) values ('6165', '2017-07-27 09:46:01', '120', '浙BD55Y3', '【浙BD55Y3】 配送员【邵铁刚】已出发 准备运往【丽水】', '1','101','0');
+2017-07-28 10:02:09:添加结果：True
+2017-07-28 10:02:10:退出节点逻辑
+2017-07-28 10:02:10:--------------------------------------------------------------
+2017-07-28 10:02:14:--------------------------------------------------------------
+2017-07-28 10:02:14:上报第三方运单节点123456123456,customerId:0,parentStorageId
+2017-07-28 10:02:14:进入创建运单节点逻辑123456123456,操作时间2017/7/27 星期四 上午 9:46:53
+2017-07-28 10:02:14:(上报节点)NodeNumber=123456123456;Content=【浙BD31Y8】 配送员【邵铁刚】已出发 准备运往【丽水】;CustomerId=0
+2017-07-28 10:02:14:自运单 :
+2017-07-28 10:02:14:查询运单是否存在:select * from waybill_base where number = '123456123456' order by id desc limit 1
+2017-07-28 10:02:15:当前运单存在,开始添加节点
+2017-07-28 10:02:15:查询该运单已有的所有节点:select id, convert(baseId, CHAR) as baseId ,operateAt,storageId,storageName,content,arrived from waybill_node where baseId = 6165,查询到的节点条数：2
+2017-07-28 10:02:15:添加节点:insert into waybill_node (baseId,operateAt,storageId,storageName,content,arrived,parentStorageId,handleFlag) values ('6165', '2017-07-27 09:46:53', '121', '浙BD31Y8', '【浙BD31Y8】 配送员【邵铁刚】已出发 准备运往【丽水】', '1','120','0');
+2017-07-28 10:02:15:添加结果：True
+2017-07-28 10:02:15:退出节点逻辑
+2017-07-28 10:02:15:--------------------------------------------------------------
+2017-07-28 10:02:19:--------------------------------------------------------------
+2017-07-28 10:02:19:上报第三方运单节点123456123456,customerId:0,parentStorageId
+2017-07-28 10:02:19:进入创建运单节点逻辑123456123456,操作时间2017/7/27 星期四 上午 9:47:24
+2017-07-28 10:02:19:(上报节点)NodeNumber=123456123456;Content=【浙BD31Y8】 运抵卸车;CustomerId=0
+2017-07-28 10:02:19:自运单 :
+2017-07-28 10:02:19:查询运单是否存在:select * from waybill_base where number = '123456123456' order by id desc limit 1
+2017-07-28 10:02:19:当前运单存在,开始添加节点
+2017-07-28 10:02:19:查询该运单已有的所有节点:select id, convert(baseId, CHAR) as baseId ,operateAt,storageId,storageName,content,arrived from waybill_node where baseId = 6165,查询到的节点条数：3
+2017-07-28 10:02:19:添加节点:insert into waybill_node (baseId,operateAt,storageId,storageName,content,arrived,parentStorageId,handleFlag) values ('6165', '2017-07-27 09:47:24', '121', '浙BD31Y8', '【浙BD31Y8】 运抵卸车', '2','121','0');
+2017-07-28 10:02:19:添加节点:update waybill_base set stage=1 ,signinAt='2017-07-27 09:47:24' where number='123456123456';
+2017-07-28 10:02:19:添加结果：True
+2017-07-28 10:02:19:退出节点逻辑
+2017-07-28 10:02:19:--------------------------------------------------------------

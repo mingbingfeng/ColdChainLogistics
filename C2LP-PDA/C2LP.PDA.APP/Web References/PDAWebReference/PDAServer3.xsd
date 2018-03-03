@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.0.150:8002/PDAServer?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model.MyEnum" />
+  <xs:import schemaLocation="http://192.168.0.150:8002/PDAServer?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ResultModelOfModel_PDAInfod4FqxSXX">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultModelOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Model_PDAInfo" Namespace="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" type="xs:int" />
+      <xs:element minOccurs="0" name="Data" nillable="true" type="tns:Model_PDAInfo" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultModelOfModel_PDAInfod4FqxSXX" nillable="true" type="tns:ResultModelOfModel_PDAInfod4FqxSXX" />
+  <xs:complexType name="Model_PDAInfo">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model.MyEnum" name="_x003C_Actived_x003E_k__BackingField" type="q1:Enum_Active" />
+      <xs:element name="_x003C_CreateAt_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_Id_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_Name_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Number_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Model_PDAInfo" nillable="true" type="tns:Model_PDAInfo" />
+  <xs:complexType name="ResultModelOfArrayOfstringuHEDJ7Dj">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultModelOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfstring" Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" type="xs:int" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Data" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultModelOfArrayOfstringuHEDJ7Dj" nillable="true" type="tns:ResultModelOfArrayOfstringuHEDJ7Dj" />
+  <xs:complexType name="ResultModelOfArrayOfModel_ColdStoraged4FqxSXX">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultModelOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfModel_ColdStorage" Namespace="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" type="xs:int" />
+      <xs:element minOccurs="0" name="Data" nillable="true" type="tns:ArrayOfModel_ColdStorage" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultModelOfArrayOfModel_ColdStoraged4FqxSXX" nillable="true" type="tns:ResultModelOfArrayOfModel_ColdStoraged4FqxSXX" />
+  <xs:complexType name="ArrayOfModel_ColdStorage">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Model_ColdStorage" nillable="true" type="tns:Model_ColdStorage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfModel_ColdStorage" nillable="true" type="tns:ArrayOfModel_ColdStorage" />
+  <xs:complexType name="Model_ColdStorage">
+    <xs:sequence>
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model.MyEnum" name="_x003C_Actived_x003E_k__BackingField" type="q3:Enum_Active" />
+      <xs:element name="_x003C_CreateAt_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_DriverTel_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Driver_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Id_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_Remark_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_StorageName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model.MyEnum" name="_x003C_StorageType_x003E_k__BackingField" type="q4:Enum_StorageType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Model_ColdStorage" nillable="true" type="tns:Model_ColdStorage" />
+  <xs:complexType name="ResultModelOfArrayOfModel_Customerd4FqxSXX">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultModelOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfModel_Customer" Namespace="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" type="xs:int" />
+      <xs:element minOccurs="0" name="Data" nillable="true" type="tns:ArrayOfModel_Customer" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultModelOfArrayOfModel_Customerd4FqxSXX" nillable="true" type="tns:ResultModelOfArrayOfModel_Customerd4FqxSXX" />
+  <xs:complexType name="ArrayOfModel_Customer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Model_Customer" nillable="true" type="tns:Model_Customer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfModel_Customer" nillable="true" type="tns:ArrayOfModel_Customer" />
+  <xs:complexType name="Model_Customer">
+    <xs:sequence>
+      <xs:element name="_x003C_Account_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model.MyEnum" name="_x003C_Actived_x003E_k__BackingField" type="q5:Enum_Active" />
+      <xs:element name="_x003C_CityId_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_CityName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ContactAddress_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ContactPerson_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ContactTel_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_CountyId_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_CountyName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_CreateAt_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_FullName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Id_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_ProvinceId_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_ProvinceName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Remark_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model.MyEnum" name="_x003C_Role_x003E_k__BackingField" type="q6:Enum_Role" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Model_Customer" nillable="true" type="tns:Model_Customer" />
+  <xs:complexType name="ResultModelOfArrayOfPDA_Model_Regiond4FqxSXX">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultModelOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfPDA_Model_Region" Namespace="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" type="xs:int" />
+      <xs:element minOccurs="0" name="Data" nillable="true" type="tns:ArrayOfPDA_Model_Region" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultModelOfArrayOfPDA_Model_Regiond4FqxSXX" nillable="true" type="tns:ResultModelOfArrayOfPDA_Model_Regiond4FqxSXX" />
+  <xs:complexType name="ArrayOfPDA_Model_Region">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PDA_Model_Region" nillable="true" type="tns:PDA_Model_Region" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPDA_Model_Region" nillable="true" type="tns:ArrayOfPDA_Model_Region" />
+  <xs:complexType name="PDA_Model_Region">
+    <xs:sequence>
+      <xs:element name="_x003C_Id_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_Name_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ParentId_x003E_k__BackingField" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PDA_Model_Region" nillable="true" type="tns:PDA_Model_Region" />
+  <xs:complexType name="ResultModelOfboolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultModelOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="boolean" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" type="xs:int" />
+      <xs:element minOccurs="0" name="Data" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultModelOfboolean" nillable="true" type="tns:ResultModelOfboolean" />
+  <xs:complexType name="ResultModelOfdateTime">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultModelOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="dateTime" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" type="xs:int" />
+      <xs:element minOccurs="0" name="Data" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultModelOfdateTime" nillable="true" type="tns:ResultModelOfdateTime" />
+  <xs:complexType name="ArrayOfModel_Waybill_Base">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Model_Waybill_Base" nillable="true" type="tns:Model_Waybill_Base" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfModel_Waybill_Base" nillable="true" type="tns:ArrayOfModel_Waybill_Base" />
+  <xs:complexType name="Model_Waybill_Base">
+    <xs:sequence>
+      <xs:element name="_x003C_BeginAt_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_BillingCount_x003E_k__BackingField" type="xs:int" />
+      <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model.MyEnum" name="_x003C_Company_x003E_k__BackingField" type="q7:Enum_Company" />
+      <xs:element name="_x003C_Id_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_Number_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_PicPostbackAt_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_ReceiverAddress_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ReceiverId_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_ReceiverOrg_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ReceiverPerson_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ReceiverTel_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SenderAddress_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SenderId_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_SenderOrg_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SenderPerson_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SenderTel_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SigninAt_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model.MyEnum" name="_x003C_Stage_x003E_k__BackingField" type="q8:Enum_WaybillStage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Model_Waybill_Base" nillable="true" type="tns:Model_Waybill_Base" />
+  <xs:complexType name="ArrayOfModel_Waybill_Node">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Model_Waybill_Node" nillable="true" type="tns:Model_Waybill_Node" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfModel_Waybill_Node" nillable="true" type="tns:ArrayOfModel_Waybill_Node" />
+  <xs:complexType name="Model_Waybill_Node">
+    <xs:sequence>
+      <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model.MyEnum" name="_x003C_Arrived_x003E_k__BackingField" type="q9:Enum_Arrived" />
+      <xs:element name="_x003C_BaseId_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Content_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Id_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_StorageId_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_StorageName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_operateAt_x003E_k__BackingField" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Model_Waybill_Node" nillable="true" type="tns:Model_Waybill_Node" />
+  <xs:complexType name="Model_Waybill_Postback_Pic">
+    <xs:sequence>
+      <xs:element name="_x003C_BaseId_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Id_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_PicName_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Model_Waybill_Postback_Pic" nillable="true" type="tns:Model_Waybill_Postback_Pic" />
+  <xs:complexType name="ArrayOfModel_Huadong_Tms_Order">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Model_Huadong_Tms_Order" nillable="true" type="tns:Model_Huadong_Tms_Order" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfModel_Huadong_Tms_Order" nillable="true" type="tns:ArrayOfModel_Huadong_Tms_Order" />
+  <xs:complexType name="Model_Huadong_Tms_Order">
+    <xs:sequence>
+      <xs:element name="_x003C_AREAHOUSE_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_CONSIGNORCODE_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_CONSIGNORNAME_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_CREDATE_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_CUSTOMERCODE_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_CUSTOMERNAME_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Code_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_DEMANDARRIVETIME_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_DEPTNAME_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_DEPTNO_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_DESCRIPTION_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ERPTRANSMODENAME_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_EXTCOL0_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_EXTCOL10_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_EXTCOL11_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_EXTCOL12_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_EXTCOL13_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_EXTCOL14_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_EXTCOL15_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_EXTCOL16_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_EXTCOL17_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_EXTCOL18_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_EXTCOL19_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_EXTCOL1_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_EXTCOL2_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_EXTCOL3_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_EXTCOL4_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_EXTCOL5_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_EXTCOL6_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_EXTCOL7_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_EXTCOL8_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_EXTCOL9_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_FROMGTRANSID_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_FROMGTRANSNAME_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_INOUTFLAG_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Id_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_JFQUNTITY_x003E_k__BackingField" type="xs:double" />
+      <xs:element name="_x003C_LEGCODE_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_OPERATIONTYPE_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ORDERINSTANCY_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_PARTQUNTITY_x003E_k__BackingField" type="xs:double" />
+      <xs:element name="_x003C_PRINTTYPE_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_RECEIVEADDR_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_RECEIVEMAN_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_RECEIVEPHONE_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ROADID_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ROUTENO_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ReceiverAddress_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ReceiverOrg_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ReceiverPerson_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ReceiverTel_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_RelationId_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SALESMAN_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SHIPDETAILID_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SHIPMENTCODE_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SRCEXPNO_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SenderAddress_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SenderOrg_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SenderPerson_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SenderTel_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_TOGTRANSID_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_TOGTRANSNAME_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_TOTALID_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_TOTALQUNTITY_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_TRANSDEADLINE_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_TRANSMODEID_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_TRANSPORTCATEGORY_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_TRANSPORTTYPE_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_WHOLEQUNTITY_x003E_k__BackingField" type="xs:double" />
+      <xs:element name="_x003C_WMSROUTEWAVENO_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Model_Huadong_Tms_Order" nillable="true" type="tns:Model_Huadong_Tms_Order" />
+  <xs:complexType name="ResultModelOfArrayOfPDA_Model_Customerd4FqxSXX">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultModelOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfPDA_Model_Customer" Namespace="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" type="xs:int" />
+      <xs:element minOccurs="0" name="Data" nillable="true" type="tns:ArrayOfPDA_Model_Customer" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultModelOfArrayOfPDA_Model_Customerd4FqxSXX" nillable="true" type="tns:ResultModelOfArrayOfPDA_Model_Customerd4FqxSXX" />
+  <xs:complexType name="ArrayOfPDA_Model_Customer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PDA_Model_Customer" nillable="true" type="tns:PDA_Model_Customer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPDA_Model_Customer" nillable="true" type="tns:ArrayOfPDA_Model_Customer" />
+  <xs:complexType name="PDA_Model_Customer">
+    <xs:sequence>
+      <xs:element name="_x003C_cityId_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_contactAddress_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_contactPerson_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_contactTel_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_countyId_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_fullName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_id_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_provinceId_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_role_x003E_k__BackingField" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PDA_Model_Customer" nillable="true" type="tns:PDA_Model_Customer" />
+  <xs:complexType name="ResultModelOfstring">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultModelOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="string" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" type="xs:int" />
+      <xs:element minOccurs="0" name="Data" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultModelOfstring" nillable="true" type="tns:ResultModelOfstring" />
+  <xs:complexType name="Model_ThirdPartOrder">
+    <xs:sequence>
+      <xs:element name="_x003C_Id_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_OperateAt_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_RelationId_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Model_ThirdPartOrder" nillable="true" type="tns:Model_ThirdPartOrder" />
+  <xs:complexType name="ResultModelOfint">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultModelOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="int" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" type="xs:int" />
+      <xs:element minOccurs="0" name="Data" type="xs:int" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultModelOfint" nillable="true" type="tns:ResultModelOfint" />
+</xs:schema>

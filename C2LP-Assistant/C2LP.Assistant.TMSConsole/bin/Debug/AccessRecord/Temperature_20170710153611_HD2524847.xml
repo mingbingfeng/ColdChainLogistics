@@ -1,0 +1,36 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.webservice.vtradex.com" > <soapenv:Header/><soapenv:Body><ser:temperatureXml1><?xml version="1.0"?>
+<XML xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MESSAGEHEAD>
+    <SENDER>NBJC01160122</SENDER>
+    <FILETYPE>XML</FILETYPE>
+    <CONTENTTYPE>CarrierTempRecord</CONTENTTYPE>
+    <SENDTIME>2017-07-10 15:34:29</SENDTIME>
+    <FILENAME>20170710153429</FILENAME>
+    <FILEFUNCTION>ADD</FILEFUNCTION>
+  </MESSAGEHEAD>
+  <MESSAGEDETAIL><![CDATA[<?xml version="1.0"?>
+<XML xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CONTENTLIST>
+    <CONTENT>
+      <HEADER />
+      <DETAILLIST>
+        <DETAIL>
+          <ECNO>161130108</ECNO>
+          <LEGNO>HD2524847</LEGNO>
+          <LICENSENO>浙B8Z639</LICENSENO>
+          <WAREHOUSECODE />
+          <TRACKTIME>2017-03-02 20:47:14</TRACKTIME>
+          <TEMPREATURE>6.8|7.0|6.8</TEMPREATURE>
+          <HUMIDITY>55.5</HUMIDITY>
+          <LONGITUDE>12013.1797</LONGITUDE>
+          <LATITUDE>3016.7019</LATITUDE>
+        </DETAIL>
+      </DETAILLIST>
+    </CONTENT>
+  </CONTENTLIST>
+</XML>]]></MESSAGEDETAIL>
+</XML></ser:temperatureXml1></soapenv:Body></soapenv:Envelope>
+
+-------------------------------------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?><XML><MSGCODE>1</MSGCODE><MSGCONTENT></MSGCONTENT><MSGNAME>20170710153429</MSGNAME></XML>

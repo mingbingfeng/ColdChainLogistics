@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<M_TMSNode xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OrderNo>1109039</OrderNo>
+  <JcOrderNo>991000000631</JcOrderNo>
+  <JcNodeId>11061</JcNodeId>
+  <TrackTime>2017-03-30T09:37:49</TrackTime>
+  <TrackPerson />
+  <TrackInfo>【冷藏库】 配送员已收取快件 准备运往【惊尘冷库】</TrackInfo>
+  <TrackType>15</TrackType>
+  <StorageName>冷藏库</StorageName>
+  <Arrived>1</Arrived>
+</M_TMSNode>
+
+-------------------------------------------------------------------------
+

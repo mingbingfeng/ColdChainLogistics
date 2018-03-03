@@ -1,0 +1,34 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.webservice.vtradex.com" > <soapenv:Header/><soapenv:Body><ser:tmsShipmentInTransitXml><?xml version="1.0"?>
+<XML xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MESSAGEHEAD>
+    <SENDER>NBJC01160122</SENDER>
+    <FILETYPE>XML</FILETYPE>
+    <CONTENTTYPE>CarrierTrackRecord</CONTENTTYPE>
+    <SENDTIME>2017-07-28 14:43:09</SENDTIME>
+    <FILENAME>20170728144309</FILENAME>
+    <FILEFUNCTION>ADD</FILEFUNCTION>
+  </MESSAGEHEAD>
+  <MESSAGEDETAIL><![CDATA[<?xml version="1.0"?>
+<XML xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CONTENTLIST>
+    <CONTENT>
+      <HEADER />
+      <DETAILLIST>
+        <DETAIL>
+          <ECNO>161109060</ECNO>
+          <CECNO>HD2485901</CECNO>
+          <LEGNO>HD2485901</LEGNO>
+          <TRACKTIME>2017-07-27 09:52:22</TRACKTIME>
+          <TRACKPERSON>朱建杭</TRACKPERSON>
+          <TRACKINFO>【浙BH7S21】 运抵卸车</TRACKINFO>
+          <TRACKTYPE>18</TRACKTYPE>
+        </DETAIL>
+      </DETAILLIST>
+    </CONTENT>
+  </CONTENTLIST>
+</XML>]]></MESSAGEDETAIL>
+</XML></ser:tmsShipmentInTransitXml></soapenv:Body></soapenv:Envelope>
+
+-------------------------------------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?><XML><MSGCODE>1</MSGCODE><MSGCONTENT></MSGCONTENT><MSGNAME>20170728144309</MSGNAME></XML>

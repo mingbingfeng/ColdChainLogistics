@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model.MyEnum" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model.MyEnum" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="Enum_HdAlarm">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Normal" />
+      <xs:enumeration value="Alarm" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Enum_HdAlarm" nillable="true" type="tns:Enum_HdAlarm" />
+</xs:schema>

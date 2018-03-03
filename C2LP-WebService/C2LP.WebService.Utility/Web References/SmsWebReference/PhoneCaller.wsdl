@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://www.thermoberg.com/Services/TelephoneService" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://tempuri.org/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PhoneCaller" targetNamespace="http://www.thermoberg.com/Services/TelephoneService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://tempuri.org/" location="http://192.168.1.43:8091/Services/TelephoneService?wsdl=wsdl0" />
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.thermoberg.com/Services/TelephoneService/Imports">
+      <xsd:import schemaLocation="http://192.168.1.43:8091/Services/TelephoneService?xsd=xsd0" namespace="http://www.thermoberg.com/Services/TelephoneService" />
+      <xsd:import schemaLocation="http://192.168.1.43:8091/Services/TelephoneService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ITelephone_Call_InputMessage">
+    <wsdl:part name="parameters" element="tns:Call" />
+  </wsdl:message>
+  <wsdl:message name="ITelephone_Call_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CallResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITelephone_sendMessageAuthCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:sendMessageAuthCode" />
+  </wsdl:message>
+  <wsdl:message name="ITelephone_sendMessageAuthCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:sendMessageAuthCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITelephone_sendMsg2018_InputMessage">
+    <wsdl:part name="parameters" element="tns:sendMsg2018" />
+  </wsdl:message>
+  <wsdl:message name="ITelephone_sendMsg2018_OutputMessage">
+    <wsdl:part name="parameters" element="tns:sendMsg2018Response" />
+  </wsdl:message>
+  <wsdl:message name="ITelephone_SendMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendMessage" />
+  </wsdl:message>
+  <wsdl:message name="ITelephone_SendMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITelephone_StopCall_InputMessage">
+    <wsdl:part name="parameters" element="tns:StopCall" />
+  </wsdl:message>
+  <wsdl:message name="ITelephone_StopCall_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StopCallResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ITelephone">
+    <wsdl:operation name="Call">
+      <wsdl:input wsaw:Action="http://www.thermoberg.com/Services/TelephoneService/ITelephone/Call" message="tns:ITelephone_Call_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.thermoberg.com/Services/TelephoneService/ITelephone/CallResponse" message="tns:ITelephone_Call_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="sendMessageAuthCode">
+      <wsdl:input wsaw:Action="http://www.thermoberg.com/Services/TelephoneService/ITelephone/sendMessageAuthCode" message="tns:ITelephone_sendMessageAuthCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.thermoberg.com/Services/TelephoneService/ITelephone/sendMessageAuthCodeResponse" message="tns:ITelephone_sendMessageAuthCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="sendMsg2018">
+      <wsdl:input wsaw:Action="http://www.thermoberg.com/Services/TelephoneService/ITelephone/sendMsg2018" message="tns:ITelephone_sendMsg2018_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.thermoberg.com/Services/TelephoneService/ITelephone/sendMsg2018Response" message="tns:ITelephone_sendMsg2018_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMessage">
+      <wsdl:input wsaw:Action="http://www.thermoberg.com/Services/TelephoneService/ITelephone/SendMessage" message="tns:ITelephone_SendMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.thermoberg.com/Services/TelephoneService/ITelephone/SendMessageResponse" message="tns:ITelephone_SendMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StopCall">
+      <wsdl:input wsaw:Action="http://www.thermoberg.com/Services/TelephoneService/ITelephone/StopCall" message="tns:ITelephone_StopCall_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.thermoberg.com/Services/TelephoneService/ITelephone/StopCallResponse" message="tns:ITelephone_StopCall_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="PhoneCaller">
+    <wsdl:port name="BasicHttpBinding_ITelephone" binding="i0:BasicHttpBinding_ITelephone">
+      <soap:address location="http://192.168.1.43:8091/Services/TelephoneService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

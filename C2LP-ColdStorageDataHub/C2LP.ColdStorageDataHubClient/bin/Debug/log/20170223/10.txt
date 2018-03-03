@@ -1,0 +1,136 @@
+2017-02-23 10:20:01:欢迎使用惊尘物流冷链数据上报系统,正在初始化...
+2017-02-23 10:20:02:读取到上报进度：ProjectId[9001] NetId[101] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:20:02:读取到上报进度：ProjectId[9001] NetId[100] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:20:02:读取到上报进度：ProjectId[300F] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:20:02:读取到上报进度：ProjectId[30F4] NetId[0] LastUploadTime[2016/10/11 13:18:00]
+2017-02-23 10:20:02:读取到上报进度：ProjectId[3564] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:20:02:读取到上报进度：ProjectId[3500] NetId[0] LastUploadTime[2016/10/11 11:58:00]
+2017-02-23 10:20:02:读取到上报进度：ProjectId[3619] NetId[0] LastUploadTime[2016/10/10 14:30:00]
+2017-02-23 10:20:02:读取到上报进度：ProjectId[3006] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:20:02:读取到上报进度：ProjectId[3000] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:20:02:读取到上报进度：ProjectId[3005] NetId[0] LastUploadTime[2016/10/11 5:23:00]
+2017-02-23 10:20:02:读取到上报进度：ProjectId[3007] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:20:02:读取到上报进度：ProjectId[3001] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:20:02:读取到上报进度：ProjectId[3004] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:20:02:读取到上报进度：ProjectId[3002] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:20:02:读取到上报进度：ProjectId[3008] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:20:02:读取到上报进度：ProjectId[3010] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:20:02:读取到上报进度：ProjectId[3011] NetId[0] LastUploadTime[2016/10/11 13:17:00]
+2017-02-23 10:20:02:读取到上报进度：ProjectId[3578] NetId[0] LastUploadTime[2016/10/10 19:07:00]
+2017-02-23 10:20:02:初始化成功,您现在就可以绑定探头或者开始上报了
+2017-02-23 10:20:02:日志保存路径[E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\C2LP.ColdStorageDataHubClient\bin\Debug\log] 日志保存天数[10]
+2017-02-23 10:20:06:已开启数据上报
+2017-02-23 10:20:26:无数据[ProjectId=3004] [NetId=0]
+2017-02-23 10:21:20:欢迎使用惊尘物流冷链数据上报系统,正在初始化...
+2017-02-23 10:21:20:读取到上报进度：ProjectId[9001] NetId[101] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:21:20:读取到上报进度：ProjectId[9001] NetId[100] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:21:20:读取到上报进度：ProjectId[300F] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:21:20:读取到上报进度：ProjectId[30F4] NetId[0] LastUploadTime[2016/10/11 13:18:00]
+2017-02-23 10:21:20:读取到上报进度：ProjectId[3564] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:21:20:读取到上报进度：ProjectId[3500] NetId[0] LastUploadTime[2016/10/11 11:58:00]
+2017-02-23 10:21:20:读取到上报进度：ProjectId[3619] NetId[0] LastUploadTime[2016/10/10 14:30:00]
+2017-02-23 10:21:20:读取到上报进度：ProjectId[3006] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:21:20:读取到上报进度：ProjectId[3000] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:21:20:读取到上报进度：ProjectId[3005] NetId[0] LastUploadTime[2016/10/11 5:23:00]
+2017-02-23 10:21:20:读取到上报进度：ProjectId[3007] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:21:20:读取到上报进度：ProjectId[3001] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:21:20:读取到上报进度：ProjectId[3004] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:21:20:读取到上报进度：ProjectId[3002] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:21:20:读取到上报进度：ProjectId[3008] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:21:20:读取到上报进度：ProjectId[3010] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:21:20:读取到上报进度：ProjectId[3011] NetId[0] LastUploadTime[2016/10/11 13:17:00]
+2017-02-23 10:21:20:读取到上报进度：ProjectId[3578] NetId[0] LastUploadTime[2016/10/10 19:07:00]
+2017-02-23 10:24:15:欢迎使用惊尘物流冷链数据上报系统,正在初始化...
+2017-02-23 10:24:16:读取到上报进度：ProjectId[9001] NetId[101] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:24:16:读取到上报进度：ProjectId[9001] NetId[100] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:24:16:读取到上报进度：ProjectId[300F] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:24:16:读取到上报进度：ProjectId[30F4] NetId[0] LastUploadTime[2016/10/11 13:18:00]
+2017-02-23 10:24:16:读取到上报进度：ProjectId[3564] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:24:16:读取到上报进度：ProjectId[3500] NetId[0] LastUploadTime[2016/10/11 11:58:00]
+2017-02-23 10:24:16:读取到上报进度：ProjectId[3619] NetId[0] LastUploadTime[2016/10/10 14:30:00]
+2017-02-23 10:24:16:读取到上报进度：ProjectId[3006] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:24:16:读取到上报进度：ProjectId[3000] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:24:16:读取到上报进度：ProjectId[3005] NetId[0] LastUploadTime[2016/10/11 5:23:00]
+2017-02-23 10:24:16:读取到上报进度：ProjectId[3007] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:24:16:读取到上报进度：ProjectId[3001] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:24:16:读取到上报进度：ProjectId[3004] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:24:16:读取到上报进度：ProjectId[3002] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:24:16:读取到上报进度：ProjectId[3008] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:24:16:读取到上报进度：ProjectId[3010] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:24:16:读取到上报进度：ProjectId[3011] NetId[0] LastUploadTime[2016/10/11 13:17:00]
+2017-02-23 10:24:16:读取到上报进度：ProjectId[3578] NetId[0] LastUploadTime[2016/10/10 19:07:00]
+2017-02-23 10:24:16:初始化成功,您现在就可以绑定探头或者开始上报了
+2017-02-23 10:24:16:日志保存路径[E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\C2LP.ColdStorageDataHubClient\bin\Debug\log] 日志保存天数[10]
+2017-02-23 10:24:16:已开启数据上报
+2017-02-23 10:25:20:欢迎使用惊尘物流冷链数据上报系统,正在初始化...
+2017-02-23 10:25:20:读取到上报进度：ProjectId[9001] NetId[101] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:25:20:读取到上报进度：ProjectId[9001] NetId[100] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:25:20:读取到上报进度：ProjectId[300F] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:25:20:读取到上报进度：ProjectId[30F4] NetId[0] LastUploadTime[2016/10/11 13:18:00]
+2017-02-23 10:25:20:读取到上报进度：ProjectId[3564] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:25:20:读取到上报进度：ProjectId[3500] NetId[0] LastUploadTime[2016/10/11 11:58:00]
+2017-02-23 10:25:20:读取到上报进度：ProjectId[3619] NetId[0] LastUploadTime[2016/10/10 14:30:00]
+2017-02-23 10:25:21:读取到上报进度：ProjectId[3006] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:25:21:读取到上报进度：ProjectId[3000] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:25:21:读取到上报进度：ProjectId[3005] NetId[0] LastUploadTime[2016/10/11 5:23:00]
+2017-02-23 10:25:21:读取到上报进度：ProjectId[3007] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:25:21:读取到上报进度：ProjectId[3001] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:25:21:读取到上报进度：ProjectId[3004] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:25:21:读取到上报进度：ProjectId[3002] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:25:21:读取到上报进度：ProjectId[3008] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:25:21:读取到上报进度：ProjectId[3010] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:25:21:读取到上报进度：ProjectId[3011] NetId[0] LastUploadTime[2016/10/11 13:17:00]
+2017-02-23 10:25:21:读取到上报进度：ProjectId[3578] NetId[0] LastUploadTime[2016/10/10 19:07:00]
+2017-02-23 10:25:21:初始化成功,您现在就可以绑定探头或者开始上报了
+2017-02-23 10:25:21:日志保存路径[E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\C2LP.ColdStorageDataHubClient\bin\Debug\log] 日志保存天数[10]
+2017-02-23 10:26:50:欢迎使用惊尘物流冷链数据上报系统,正在初始化...
+2017-02-23 10:26:50:读取到上报进度：ProjectId[9001] NetId[101] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:26:50:读取到上报进度：ProjectId[9001] NetId[100] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:26:50:读取到上报进度：ProjectId[300F] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:26:50:读取到上报进度：ProjectId[30F4] NetId[0] LastUploadTime[2016/10/11 13:18:00]
+2017-02-23 10:26:50:读取到上报进度：ProjectId[3564] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:26:50:读取到上报进度：ProjectId[3500] NetId[0] LastUploadTime[2016/10/11 11:58:00]
+2017-02-23 10:26:50:读取到上报进度：ProjectId[3619] NetId[0] LastUploadTime[2016/10/10 14:30:00]
+2017-02-23 10:26:50:读取到上报进度：ProjectId[3006] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:26:50:读取到上报进度：ProjectId[3000] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:26:50:读取到上报进度：ProjectId[3005] NetId[0] LastUploadTime[2016/10/11 5:23:00]
+2017-02-23 10:26:50:读取到上报进度：ProjectId[3007] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:26:50:读取到上报进度：ProjectId[3001] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:26:50:读取到上报进度：ProjectId[3004] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:26:50:读取到上报进度：ProjectId[3002] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:26:50:读取到上报进度：ProjectId[3008] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:26:50:读取到上报进度：ProjectId[3010] NetId[0] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:26:50:读取到上报进度：ProjectId[3011] NetId[0] LastUploadTime[2016/10/11 13:17:00]
+2017-02-23 10:26:50:读取到上报进度：ProjectId[3578] NetId[0] LastUploadTime[2016/10/10 19:07:00]
+2017-02-23 10:26:50:初始化成功,您现在就可以绑定探头或者开始上报了
+2017-02-23 10:26:50:日志保存路径[E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\C2LP.ColdStorageDataHubClient\bin\Debug\log] 日志保存天数[10]
+2017-02-23 10:28:46:读取到上报进度：ProjectId[9001] NetId[101] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:28:46:读取到上报进度：ProjectId[9001] NetId[100] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:28:46:打开绑定探头界面,重新加载上报进度
+2017-02-23 10:29:04:读取到上报进度：ProjectId[9001] NetId[100] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:29:04:打开绑定探头界面,重新加载上报进度
+2017-02-23 10:29:10:已开启数据上报
+2017-02-23 10:30:06:欢迎使用惊尘物流冷链数据上报系统,正在初始化...
+2017-02-23 10:30:06:读取到上报进度：ProjectId[9001] NetId[100] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:30:07:初始化成功,您现在就可以绑定探头或者开始上报了
+2017-02-23 10:30:07:日志保存路径[E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\C2LP.ColdStorageDataHubClient\bin\Debug\log] 日志保存天数[10]
+2017-02-23 10:30:08:已开启数据上报
+2017-02-23 10:30:39:上报失败[ProjectId=9001] [NetId=100]:无法连接到远程服务器
+2017-02-23 10:32:13:本次上报结束后将停止继续上报
+2017-02-23 10:34:20:打开配置文件
+2017-02-23 10:41:19:欢迎使用惊尘物流冷链数据上报系统,正在初始化...
+2017-02-23 10:41:19:读取到上报进度：ProjectId[9001] NetId[100] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:41:19:初始化成功,您现在就可以绑定探头或者开始上报了
+2017-02-23 10:41:19:日志保存路径[E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\C2LP.ColdStorageDataHubClient\bin\Debug\log] 日志保存天数[10]
+2017-02-23 10:43:26:欢迎使用惊尘物流冷链数据上报系统,正在初始化...
+2017-02-23 10:43:26:读取到上报进度：ProjectId[9001] NetId[100] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:43:26:初始化成功,您现在就可以绑定探头或者开始上报了
+2017-02-23 10:43:26:日志保存路径[E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\C2LP.ColdStorageDataHubClient\bin\Debug\log] 日志保存天数[10]
+2017-02-23 10:43:34:欢迎使用惊尘物流冷链数据上报系统,正在初始化...
+2017-02-23 10:43:35:读取到上报进度：ProjectId[9001] NetId[100] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:43:35:初始化成功,您现在就可以绑定探头或者开始上报了
+2017-02-23 10:43:35:日志保存路径[E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\C2LP.ColdStorageDataHubClient\bin\Debug\log] 日志保存天数[10]
+2017-02-23 10:43:45:欢迎使用惊尘物流冷链数据上报系统,正在初始化...
+2017-02-23 10:43:45:读取到上报进度：ProjectId[9001] NetId[100] LastUploadTime[2016/10/1 0:00:00]
+2017-02-23 10:43:45:初始化成功,您现在就可以绑定探头或者开始上报了
+2017-02-23 10:43:45:日志保存路径[E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\C2LP.ColdStorageDataHubClient\bin\Debug\log] 日志保存天数[10]

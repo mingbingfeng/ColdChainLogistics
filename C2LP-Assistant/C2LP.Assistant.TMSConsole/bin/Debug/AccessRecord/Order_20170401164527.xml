@@ -1,0 +1,656 @@
+<?xml version="1.0"?>
+<ArrayOfM_TMSOrder xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <M_TMSOrder>
+    <id>851</id>
+    <orderNo>1558223</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县中医院</receiverOrg>
+    <receiverPerson>周李刚</receiverPerson>
+    <receiverTel>13456787885</receiverTel>
+    <receiverAddress>桐君街道开元街180号(西药房)</receiverAddress>
+    <beginAt>2015-03-18T19:38:59</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>852</id>
+    <orderNo>1489109</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司中西药械分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县第一人民医院</receiverOrg>
+    <receiverPerson>余红丽</receiverPerson>
+    <receiverTel>64399690</receiverTel>
+    <receiverAddress>桐庐镇学圣路338号(西药房)</receiverAddress>
+    <beginAt>2015-01-21T18:50:40</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>853</id>
+    <orderNo>1558192</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县第一人民医院</receiverOrg>
+    <receiverPerson>余红丽</receiverPerson>
+    <receiverTel>64399690</receiverTel>
+    <receiverAddress>桐庐镇学圣路338号(西药房)</receiverAddress>
+    <beginAt>2015-03-18T19:38:58</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>854</id>
+    <orderNo>1561327</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县中医院</receiverOrg>
+    <receiverPerson>周李刚</receiverPerson>
+    <receiverTel>13456787885</receiverTel>
+    <receiverAddress>桐君街道开元街180号(西药房)</receiverAddress>
+    <beginAt>2015-03-20T19:02:53</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>855</id>
+    <orderNo>1568298</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县第一人民医院</receiverOrg>
+    <receiverPerson>余红丽</receiverPerson>
+    <receiverTel>64399690</receiverTel>
+    <receiverAddress>桐庐镇学圣路338号(西药房)</receiverAddress>
+    <beginAt>2015-03-25T19:03:41</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>856</id>
+    <orderNo>1559416</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县第一人民医院</receiverOrg>
+    <receiverPerson>余红丽</receiverPerson>
+    <receiverTel>64399690</receiverTel>
+    <receiverAddress>桐庐镇学圣路338号(西药房)</receiverAddress>
+    <beginAt>2015-03-18T19:38:58</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>857</id>
+    <orderNo>1564054</orderNo>
+    <senderOrg>丽珠医药集团股份有限公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>上海医药分销控股有限公司</receiverOrg>
+    <receiverPerson>上海医药分销控股有限公司</receiverPerson>
+    <receiverTel>021-36321776</receiverTel>
+    <receiverAddress>上海市普陀区绥德路99号</receiverAddress>
+    <beginAt>2015-03-23T19:14:59</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>858</id>
+    <orderNo>1564055</orderNo>
+    <senderOrg>丽珠医药集团股份有限公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>上海医药分销控股有限公司</receiverOrg>
+    <receiverPerson>上海医药分销控股有限公司</receiverPerson>
+    <receiverTel>021-36321776</receiverTel>
+    <receiverAddress>上海市普陀区绥德路99号</receiverAddress>
+    <beginAt>2015-03-23T19:15:00</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>859</id>
+    <orderNo>1570114</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县第一人民医院</receiverOrg>
+    <receiverPerson>余红丽</receiverPerson>
+    <receiverTel>64399690</receiverTel>
+    <receiverAddress>桐庐镇学圣路338号(西药房)</receiverAddress>
+    <beginAt>2015-03-27T18:52:43</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>860</id>
+    <orderNo>1571433</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县第一人民医院</receiverOrg>
+    <receiverPerson>余红丽</receiverPerson>
+    <receiverTel>64399690</receiverTel>
+    <receiverAddress>桐庐镇学圣路338号(西药房)</receiverAddress>
+    <beginAt>2015-03-27T18:52:46</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>861</id>
+    <orderNo>1578440</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县第一人民医院</receiverOrg>
+    <receiverPerson>余红丽</receiverPerson>
+    <receiverTel>64399690</receiverTel>
+    <receiverAddress>桐庐镇学圣路338号(西药房)</receiverAddress>
+    <beginAt>2015-04-01T19:14:46</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>862</id>
+    <orderNo>1575688</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县妇幼保健院</receiverOrg>
+    <receiverPerson>吴中琴</receiverPerson>
+    <receiverTel>69908823</receiverTel>
+    <receiverAddress>桐庐县江南开发区大奇山路(西药房)</receiverAddress>
+    <beginAt>2015-04-01T19:14:46</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>863</id>
+    <orderNo>1577239</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县第一人民医院</receiverOrg>
+    <receiverPerson>余红丽</receiverPerson>
+    <receiverTel>64399690</receiverTel>
+    <receiverAddress>桐庐镇学圣路338号(西药房)</receiverAddress>
+    <beginAt>2015-04-01T19:14:45</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>864</id>
+    <orderNo>1578036</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县中医院</receiverOrg>
+    <receiverPerson>周李刚</receiverPerson>
+    <receiverTel>13456787885</receiverTel>
+    <receiverAddress>桐君街道开元街180号(西药房)</receiverAddress>
+    <beginAt>2015-04-01T19:14:45</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>865</id>
+    <orderNo>1584604</orderNo>
+    <senderOrg>丽珠医药集团股份有限公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>上海东虹医药有限公司</receiverOrg>
+    <receiverPerson>上海东虹医药有限公司</receiverPerson>
+    <receiverTel>021-65590761转仓库</receiverTel>
+    <receiverAddress>上海市榆林路342号</receiverAddress>
+    <beginAt>2015-04-07T18:50:11</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>866</id>
+    <orderNo>1584603</orderNo>
+    <senderOrg>丽珠医药集团股份有限公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>上海思富医药有限公司</receiverOrg>
+    <receiverPerson>上海思富医药有限公司</receiverPerson>
+    <receiverTel>思富冷库</receiverTel>
+    <receiverAddress>上海市绥德路99号</receiverAddress>
+    <beginAt>2015-04-07T18:50:11</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>867</id>
+    <orderNo>1584602</orderNo>
+    <senderOrg>丽珠医药集团股份有限公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>上海思富医药有限公司</receiverOrg>
+    <receiverPerson>上海思富医药有限公司</receiverPerson>
+    <receiverTel>思富冷库</receiverTel>
+    <receiverAddress>上海市绥德路99号</receiverAddress>
+    <beginAt>2015-04-07T18:50:12</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>868</id>
+    <orderNo>1595586</orderNo>
+    <senderOrg>丽珠医药集团股份有限公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>国药控股股份有限公司</receiverOrg>
+    <receiverPerson>国药控股股份有限公司</receiverPerson>
+    <receiverTel>66553619、66553617</receiverTel>
+    <receiverAddress>上海市闸北区康宁路1089号（近场中路）国药集团医药物流有限公司上海物流中心</receiverAddress>
+    <beginAt>2015-04-15T18:31:33</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>869</id>
+    <orderNo>1596812</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县中医院</receiverOrg>
+    <receiverPerson>周李刚</receiverPerson>
+    <receiverTel>13456787885</receiverTel>
+    <receiverAddress>桐君街道开元街180号(西药房)</receiverAddress>
+    <beginAt>2015-04-15T18:31:54</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>870</id>
+    <orderNo>1596817</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县中医院</receiverOrg>
+    <receiverPerson>周李刚</receiverPerson>
+    <receiverTel>13456787885</receiverTel>
+    <receiverAddress>桐君街道开元街180号(西药房)</receiverAddress>
+    <beginAt>2015-04-15T18:31:54</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>871</id>
+    <orderNo>1595587</orderNo>
+    <senderOrg>丽珠医药集团股份有限公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>国药控股股份有限公司</receiverOrg>
+    <receiverPerson>国药控股股份有限公司</receiverPerson>
+    <receiverTel>66553619、66553617</receiverTel>
+    <receiverAddress>上海市闸北区康宁路1089号（近场中路）国药集团医药物流有限公司上海物流中心</receiverAddress>
+    <beginAt>2015-04-15T18:31:33</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>872</id>
+    <orderNo>1595592</orderNo>
+    <senderOrg>丽珠医药集团股份有限公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>国药控股股份有限公司</receiverOrg>
+    <receiverPerson>国药控股股份有限公司</receiverPerson>
+    <receiverTel>66553619、66553617</receiverTel>
+    <receiverAddress>上海市闸北区康宁路1089号（近场中路）国药集团医药物流有限公司上海物流中心</receiverAddress>
+    <beginAt>2015-04-15T18:31:33</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>873</id>
+    <orderNo>1597018</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县第一人民医院</receiverOrg>
+    <receiverPerson>余红丽</receiverPerson>
+    <receiverTel>64399690</receiverTel>
+    <receiverAddress>桐庐镇学圣路338号(西药房)</receiverAddress>
+    <beginAt>2015-04-15T18:31:54</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>874</id>
+    <orderNo>1600414</orderNo>
+    <senderOrg>丽珠医药集团股份有限公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>上海医药分销控股有限公司</receiverOrg>
+    <receiverPerson>上海医药分销控股有限公司</receiverPerson>
+    <receiverTel>021-36321776</receiverTel>
+    <receiverAddress>上海市普陀区绥德路99号</receiverAddress>
+    <beginAt>2015-04-17T19:03:08</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>875</id>
+    <orderNo>1600417</orderNo>
+    <senderOrg>丽珠医药集团股份有限公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>上海医药分销控股有限公司</receiverOrg>
+    <receiverPerson>上海医药分销控股有限公司</receiverPerson>
+    <receiverTel>021-36321776</receiverTel>
+    <receiverAddress>上海市普陀区绥德路99号</receiverAddress>
+    <beginAt>2015-04-17T19:03:09</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>876</id>
+    <orderNo>1600415</orderNo>
+    <senderOrg>丽珠医药集团股份有限公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>上海医药分销控股有限公司</receiverOrg>
+    <receiverPerson>上海医药分销控股有限公司</receiverPerson>
+    <receiverTel>021-36321776</receiverTel>
+    <receiverAddress>上海市普陀区绥德路99号</receiverAddress>
+    <beginAt>2015-04-17T19:03:09</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>877</id>
+    <orderNo>1501757</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>义乌市中医医院</receiverOrg>
+    <receiverPerson />
+    <receiverTel>0579-5527365</receiverTel>
+    <receiverAddress>义乌市城中中路15号(西药房)</receiverAddress>
+    <beginAt>2015-02-02T23:59:54</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>878</id>
+    <orderNo>1606521</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县中医院</receiverOrg>
+    <receiverPerson>周李刚</receiverPerson>
+    <receiverTel>13456787885</receiverTel>
+    <receiverAddress>桐君街道开元街180号(西药房)</receiverAddress>
+    <beginAt>2015-04-22T20:05:56</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>879</id>
+    <orderNo>1606502</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县中医院</receiverOrg>
+    <receiverPerson>周李刚</receiverPerson>
+    <receiverTel>13456787885</receiverTel>
+    <receiverAddress>桐君街道开元街180号(西药房)</receiverAddress>
+    <beginAt>2015-04-22T20:05:57</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>880</id>
+    <orderNo>1606520</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县第一人民医院</receiverOrg>
+    <receiverPerson>余红丽</receiverPerson>
+    <receiverTel>64399690</receiverTel>
+    <receiverAddress>桐庐镇学圣路338号(西药房)</receiverAddress>
+    <beginAt>2015-04-22T20:05:57</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>881</id>
+    <orderNo>1606488</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县中医院</receiverOrg>
+    <receiverPerson>周李刚</receiverPerson>
+    <receiverTel>13456787885</receiverTel>
+    <receiverAddress>桐君街道开元街180号(西药房)</receiverAddress>
+    <beginAt>2015-04-22T20:05:58</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>882</id>
+    <orderNo>1608609</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县第一人民医院</receiverOrg>
+    <receiverPerson>余红丽</receiverPerson>
+    <receiverTel>64399690</receiverTel>
+    <receiverAddress>桐庐镇学圣路338号(西药房)</receiverAddress>
+    <beginAt>2015-04-22T20:05:59</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>883</id>
+    <orderNo>1606487</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县第一人民医院</receiverOrg>
+    <receiverPerson>余红丽</receiverPerson>
+    <receiverTel>64399690</receiverTel>
+    <receiverAddress>桐庐镇学圣路338号(西药房)</receiverAddress>
+    <beginAt>2015-04-22T20:05:56</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>884</id>
+    <orderNo>1611832</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县第一人民医院</receiverOrg>
+    <receiverPerson>余红丽</receiverPerson>
+    <receiverTel>64399690</receiverTel>
+    <receiverAddress>桐庐镇学圣路338号(西药房)</receiverAddress>
+    <beginAt>2015-04-24T18:52:45</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>885</id>
+    <orderNo>1612820</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县中医院</receiverOrg>
+    <receiverPerson>周李刚</receiverPerson>
+    <receiverTel>13456787885</receiverTel>
+    <receiverAddress>桐君街道开元街180号(西药房)</receiverAddress>
+    <beginAt>2015-04-24T18:52:47</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>886</id>
+    <orderNo>1612827</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县中医院</receiverOrg>
+    <receiverPerson>周李刚</receiverPerson>
+    <receiverTel>13456787885</receiverTel>
+    <receiverAddress>桐君街道开元街180号(西药房)</receiverAddress>
+    <beginAt>2015-04-24T18:52:42</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>887</id>
+    <orderNo>1612576</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县第一人民医院</receiverOrg>
+    <receiverPerson>余红丽</receiverPerson>
+    <receiverTel>64399690</receiverTel>
+    <receiverAddress>桐庐镇学圣路338号(西药房)</receiverAddress>
+    <beginAt>2015-04-24T18:52:44</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>888</id>
+    <orderNo>1612141</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县第一人民医院</receiverOrg>
+    <receiverPerson>余红丽</receiverPerson>
+    <receiverTel>64399690</receiverTel>
+    <receiverAddress>桐庐镇学圣路338号(西药房)</receiverAddress>
+    <beginAt>2015-04-24T18:52:43</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>889</id>
+    <orderNo>1575666</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县中医院</receiverOrg>
+    <receiverPerson>周李刚</receiverPerson>
+    <receiverTel>13456787885</receiverTel>
+    <receiverAddress>桐君街道开元街180号(西药房)</receiverAddress>
+    <beginAt>2015-04-01T19:14:46</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>890</id>
+    <orderNo>1578270</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县第一人民医院</receiverOrg>
+    <receiverPerson>余红丽</receiverPerson>
+    <receiverTel>64399690</receiverTel>
+    <receiverAddress>桐庐镇学圣路338号(西药房)</receiverAddress>
+    <beginAt>2015-04-01T19:14:47</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>891</id>
+    <orderNo>1618182</orderNo>
+    <senderOrg>丽珠医药集团股份有限公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>上海思富医药有限公司</receiverOrg>
+    <receiverPerson>上海思富医药有限公司</receiverPerson>
+    <receiverTel>思富冷库</receiverTel>
+    <receiverAddress>上海市绥德路99号</receiverAddress>
+    <beginAt>2015-04-28T18:39:24</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>892</id>
+    <orderNo>1618183</orderNo>
+    <senderOrg>丽珠医药集团股份有限公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>上海东虹医药有限公司</receiverOrg>
+    <receiverPerson>上海东虹医药有限公司</receiverPerson>
+    <receiverTel>021-65590761转仓库</receiverTel>
+    <receiverAddress>上海市榆林路342号</receiverAddress>
+    <beginAt>2015-04-28T18:39:24</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>893</id>
+    <orderNo>1618181</orderNo>
+    <senderOrg>丽珠医药集团股份有限公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>上海思富医药有限公司</receiverOrg>
+    <receiverPerson>上海思富医药有限公司</receiverPerson>
+    <receiverTel>思富冷库</receiverTel>
+    <receiverAddress>上海市绥德路99号</receiverAddress>
+    <beginAt>2015-04-28T18:39:24</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>894</id>
+    <orderNo>1255492</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司广通分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress />
+    <receiverOrg>桐乡市第四人民医院</receiverOrg>
+    <receiverPerson>孙学良</receiverPerson>
+    <receiverTel>0573-8811364</receiverTel>
+    <receiverAddress>桐乡市濮院镇</receiverAddress>
+    <beginAt>2014-07-30T18:42:09</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>895</id>
+    <orderNo>1619398</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县第一人民医院</receiverOrg>
+    <receiverPerson>余红丽</receiverPerson>
+    <receiverTel>64399690</receiverTel>
+    <receiverAddress>桐庐镇学圣路338号(西药房)</receiverAddress>
+    <beginAt>2015-04-29T19:26:37</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>896</id>
+    <orderNo>1619388</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县中医院</receiverOrg>
+    <receiverPerson>周李刚</receiverPerson>
+    <receiverTel>13456787885</receiverTel>
+    <receiverAddress>桐君街道开元街180号(西药房)</receiverAddress>
+    <beginAt>2015-04-29T19:26:38</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>897</id>
+    <orderNo>1619440</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县妇幼保健院</receiverOrg>
+    <receiverPerson>吴中琴</receiverPerson>
+    <receiverTel>69908823</receiverTel>
+    <receiverAddress>桐庐县江南开发区大奇山路(西药房)</receiverAddress>
+    <beginAt>2015-04-29T19:26:40</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>898</id>
+    <orderNo>1624225</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县中医院</receiverOrg>
+    <receiverPerson>周李刚</receiverPerson>
+    <receiverTel>13456787885</receiverTel>
+    <receiverAddress>桐君街道开元街180号(西药房)</receiverAddress>
+    <beginAt>2015-04-30T19:18:28</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>899</id>
+    <orderNo>1621459</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县第一人民医院</receiverOrg>
+    <receiverPerson>余红丽</receiverPerson>
+    <receiverTel>64399690</receiverTel>
+    <receiverAddress>桐庐镇学圣路338号(西药房)</receiverAddress>
+    <beginAt>2015-04-29T19:26:40</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>900</id>
+    <orderNo>1633243</orderNo>
+    <senderOrg>华东医药股份有限公司华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel />
+    <senderAddress>下沙经济技术开发区13号大街325号</senderAddress>
+    <receiverOrg>桐庐县第一人民医院</receiverOrg>
+    <receiverPerson>余红丽</receiverPerson>
+    <receiverTel>64399690</receiverTel>
+    <receiverAddress>桐庐镇学圣路338号(西药房)</receiverAddress>
+    <beginAt>2015-05-06T18:51:39</beginAt>
+  </M_TMSOrder>
+</ArrayOfM_TMSOrder>
+
+-------------------------------------------------------------------------
+

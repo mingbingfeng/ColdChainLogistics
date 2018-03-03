@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://192.168.0.153:8002/PDAServer?xsd=xsd4" filename="PDAServer.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://192.168.0.153:8002/PDAServer?xsd=xsd1" filename="PDAServer0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://192.168.0.153:8002/PDAServer?xsd=xsd2" filename="PDAServer1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://192.168.0.153:8002/PDAServer?disco" filename="PDAServer.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://192.168.0.153:8002/PDAServer?xsd=xsd0" filename="PDAServer2.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://192.168.0.153:8002/PDAServer?xsd=xsd3" filename="PDAServer3.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://192.168.0.153:8002/PDAServer?wsdl" filename="PDAServer.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>

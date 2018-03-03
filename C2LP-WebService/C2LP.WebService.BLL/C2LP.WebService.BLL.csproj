@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01DA7F62-AB27-40BA-A43A-240CE8D70583}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>C2LP.WebService.BLL</RootNamespace>
+    <AssemblyName>C2LP.WebService.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\CommDLL\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseServer.cs" />
+    <Compile Include="ColdChainBLL\CC_HistDataServer.cs" />
+    <Compile Include="ConsoleBLL\AiinFoServer.cs" />
+    <Compile Include="ConsoleBLL\AreaCityServer.cs" />
+    <Compile Include="ConsoleBLL\ColdstorageServer.cs" />
+    <Compile Include="ConsoleBLL\CustomerServer.cs" />
+    <Compile Include="ConsoleBLL\CustomerUsersServer.cs" />
+    <Compile Include="ConsoleBLL\DeviceServer.cs" />
+    <Compile Include="ConsoleBLL\HuadongTmsOrderServer.cs" />
+    <Compile Include="ConsoleBLL\StorageDeviceServer.cs" />
+    <Compile Include="ConsoleBLL\WaybillBaseServer.cs" />
+    <Compile Include="LogServer.cs" />
+    <Compile Include="PDABLL\PDA_DestinServer.cs" />
+    <Compile Include="PDABLL\PDA_CustomerServer.cs" />
+    <Compile Include="PDABLL\PDA_DeviceServer.cs" />
+    <Compile Include="PDABLL\PDA_HuadongTmsOrderServer.cs" />
+    <Compile Include="PDABLL\PDA_RangeServer.cs" />
+    <Compile Include="PDABLL\PDA_StorageServer.cs" />
+    <Compile Include="PDABLL\PDA_WaybillServer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SmsBLL\SmsRecordServer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\C2LP.WebService.Model\C2LP.WebService.Model.csproj">
+      <Project>{b86a18fe-83b5-46f9-91f0-665f2d054f14}</Project>
+      <Name>C2LP.WebService.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\C2LP.WebService.Utility\C2LP.WebService.Utility.csproj">
+      <Project>{9affeb49-c938-40ea-882a-f36c31306982}</Project>
+      <Name>C2LP.WebService.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

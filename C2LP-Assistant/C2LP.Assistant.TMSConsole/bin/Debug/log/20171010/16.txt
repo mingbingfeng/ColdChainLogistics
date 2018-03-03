@@ -1,0 +1,8 @@
+2017-10-10 16:41:27:查询延迟发单的第三方运单:select relationId,customerId from huadong_tms_order where createtime > '2017-08-01' and secretkey = '未知'
+2017-10-10 16:45:35:查询延迟发单的第三方运单:select relationId,customerId from huadong_tms_order where createtime > '2017-08-01' and secretkey = '未知'
+2017-10-10 16:45:49:查询延迟发单的第三方运单:select relationId,customerId from huadong_tms_order where createtime > '2017-08-01' and secretkey = '未知'
+2017-10-10 16:47:11:查询延迟发单的第三方运单:select relationId,customerId from huadong_tms_order where createtime > '2017-08-01' and secretkey = '未知'
+2017-10-10 16:48:21:查询延迟发单的第三方运单:select relationId,customerId from huadong_tms_order where createtime > '2017-08-01' and secretkey = '未知'
+2017-10-10 16:51:19:查询延迟发单的第三方运单:select relationId,customerId from huadong_tms_order where createtime > '2017-08-01' and secretkey = '未知'
+2017-10-10 16:54:14:查询延迟发单的第三方运单:select relationId,customerId from huadong_tms_order where createtime > '2017-08-01' and secretkey = '未知'
+2017-10-10 16:57:19:查询延迟发单的第三方运单:select relationId,customerId from huadong_tms_order where createtime > '2017-08-01' and secretkey = '未知'

@@ -1,0 +1,14 @@
+E:\develop\c2rp_ccbs_dataoptimize\TBCC.DBHelp\obj\Debug\TBCC.DBHelp.csprojResolveAssemblyReference.cache
+E:\develop\c2rp_ccbs_dataoptimize\TBCC.DBHelp\bin\Debug\TBCC.DBHelp.dll.config
+E:\develop\c2rp_ccbs_dataoptimize\TBCC.DBHelp\bin\Debug\TBCC.DBHelp.dll
+E:\develop\c2rp_ccbs_dataoptimize\TBCC.DBHelp\bin\Debug\TBCC.DBHelp.pdb
+E:\develop\c2rp_ccbs_dataoptimize\TBCC.DBHelp\bin\Debug\MySql.Data.dll
+E:\develop\c2rp_ccbs_dataoptimize\TBCC.DBHelp\obj\Debug\TBCC.DBHelp.dll
+E:\develop\c2rp_ccbs_dataoptimize\TBCC.DBHelp\obj\Debug\TBCC.DBHelp.pdb
+E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\TBCC.DBHelp\bin\Debug\TBCC.DBHelp.dll.config
+E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\TBCC.DBHelp\bin\Debug\TBCC.DBHelp.dll
+E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\TBCC.DBHelp\bin\Debug\TBCC.DBHelp.pdb
+E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\TBCC.DBHelp\obj\Debug\TBCC.DBHelp.dll
+E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\TBCC.DBHelp\obj\Debug\TBCC.DBHelp.pdb
+E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\TBCC.DBHelp\bin\Debug\MySql.Data.dll
+E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\TBCC.DBHelp\obj\Debug\TBCC.DBHelp.csprojResolveAssemblyReference.cache

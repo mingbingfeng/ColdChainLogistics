@@ -1,0 +1,212 @@
+2017-07-28 09:43:44:--------------------------------------------------------------
+2017-07-28 09:43:44:上报第三方运单HD123456,customerId:669
+2017-07-28 09:43:44:进入创建第三方运单逻辑HD123456,操作时间2017-07-27 09:50:09
+2017-07-28 09:43:44:select * from waybill_base where number in (select number from huadong_tmsorder_waybillbase where relationId = 'HD123456') and number<>'' and number is not null
+2017-07-28 09:43:44:CheckThirdPartyNumberExist:0
+2017-07-28 09:43:44:拼接后的运单号：9910HD123456
+2017-07-28 09:43:45:更新第三方运单relationId：update huadong_tms_order set relationId='HD123456' where (SHIPDETAILID = 'HD123456' or LEGCODE = 'HD123456' ) and customerId = 669,结果：0
+2017-07-28 09:43:45:第三方运单不存在时，先插入一条空信息的运单，待第三方运单同步回来时更新运单信息
+2017-07-28 09:43:45:开始添加关联运单
+2017-07-28 09:43:45:INSERT INTO `coldchain_logistics_db`.`huadong_tms_order` ( `relationId`, `code`, `SRCEXPNO`, `ROADID`, `SHIPDETAILID`, `TOTALID`, `LEGCODE`, `SHIPMENTCODE`, `CONSIGNORCODE`, `CONSIGNORNAME`, `DEPTNO`, `DEPTNAME`, `CUSTOMERCODE`, `CUSTOMERNAME`, `AREAHOUSE`, `SALESMAN`, `TRANSMODEID`, `ERPTRANSMODENAME`, `OPERATIONTYPE`, `DEMANDARRIVETIME`, `TRANSPORTTYPE`, `ORDERINSTANCY`, `TRANSPORTCATEGORY`, `ROUTENO`, `TRANSDEADLINE`, `FROMGTRANSID`, `FROMGTRANSNAME`, `TOGTRANSID`, `TOGTRANSNAME`, `RECEIVEADDR`, `RECEIVEMAN`, `RECEIVEPHONE`, `CREDATE`, `INOUTFLAG`, `WMSROUTEWAVENO`, `PRINTTYPE`, `TOTALQUNTITY`, `WHOLEQUNTITY`, `PARTQUNTITY`, `JFQUNTITY`, `DESCRIPTION`, `EXTCOL0`, `EXTCOL1`, `EXTCOL2`, `EXTCOL3`, `EXTCOL4`, `EXTCOL5`, `EXTCOL6`, `EXTCOL7`, `EXTCOL8`, `EXTCOL9`, `EXTCOL10`, `EXTCOL11`, `EXTCOL12`, `EXTCOL13`, `EXTCOL14`, `EXTCOL15`, `EXTCOL16`, `EXTCOL17`, `EXTCOL18`, `EXTCOL19`, `senderOrg`, `senderPerson`, `senderTel`, `senderAddress`, `receiverOrg`, `receiverPerson`, `receiverTel`, `receiverAddress`, `SecretKey`, `CreateTime`, `customerId`) VALUES ( 'HD123456', '', '', '', 'HD123456', '', 'HD123456', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0,0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '未知', '2017-07-27 09:50:09', '669');
+2017-07-28 09:43:45:insert into huadong_tmsorder_waybillbase(relationId,number,customerId) values('HD123456', '9910HD123456',669)
+2017-07-28 09:43:45:insert into waybill_base (number,senderId,senderOrg,senderPerson,senderTel,senderAddress,receiverId,receiverOrg,receiverPerson, receiverTel, receiverAddress, billingCount, stage, beginAt, signinAt, picPostbackAt, company) select '9910HD123456' as number, 669 as senderId, '华东医药供应链管理（杭州）有限公司' as senderOrg, EXTCOL12 as senderPerson, '' as senderTel, EXTCOL11 as senderAddress,null as receiverId, CUSTOMERNAME as receiverOrg, RECEIVEMAN as receiverPerson, RECEIVEPHONE as receiverTel, RECEIVEADDR as receiverAddress,0 as billingCount, 0 as stage, '2017-07-27 09:50:09' as beginAt, null as signinAt, null as picPostbackAt, 1 as company from huadong_tms_order where SHIPDETAILID = 'HD123456' or LEGCODE = 'HD123456' limit 1
+2017-07-28 09:43:46:执行结果：1
+2017-07-28 09:43:46:开始删除临时表超过一个月的信息
+2017-07-28 09:43:47:查询关系表是否存在信息select * from huadong_tmsorder_waybillbase where relationId='HD123456';
+2017-07-28 09:43:47:查询运单信息是否存在select * from waybill_base where number='9910HD123456';  
+2017-07-28 09:43:47:查询暂存表是否存在节点信息select * from unnecessary_node where baseId='HD123456' and operateAt>='2017-07-27 09:50:09';
+2017-07-28 09:43:47:暂存表不存在节点信息
+2017-07-28 09:43:47:开始删除临时图片表超过一个月的信息
+2017-07-28 09:43:47:图片表不存在图片信息,sql:select * from temporarypictures where baseId='HD123456' and operateAt>='2017-07-27 09:50:09';,结果:0
+2017-07-28 09:43:47:创建第三方运单逻辑结束
+2017-07-28 09:43:47:退出运单逻辑
+2017-07-28 09:43:47:--------------------------------------------------------------
+2017-07-28 09:44:02:--------------------------------------------------------------
+2017-07-28 09:44:02:上报第三方运单节点HD123456,customerId:669,parentStorageId
+2017-07-28 09:44:07:进入创建运单节点逻辑HD123456,操作时间2017/7/27 星期四 上午 9:50:09
+2017-07-28 09:44:08:(上报节点)NodeNumber=HD123456;Content=【浙BD31Y8】 配送员【邵铁刚】已收取快件 准备运往【丽水】;CustomerId=669
+2017-07-28 09:44:12:第三方运单需要查询关系表获取转换后的运单号select number from huadong_tmsorder_waybillbase where relationid='HD123456' and customerId=669,结果：9910HD123456
+2017-07-28 09:44:13:查询运单是否存在:select * from waybill_base where number = '9910HD123456' order by id desc limit 1
+2017-07-28 09:44:17:当前运单存在,开始添加节点
+2017-07-28 09:44:23:查询该运单已有的所有节点:select id, convert(baseId, CHAR) as baseId ,operateAt,storageId,storageName,content,arrived from waybill_node where baseId = 6164,查询到的节点条数：0
+2017-07-28 09:44:30:添加节点:insert into waybill_node (baseId,operateAt,storageId,storageName,content,arrived,parentStorageId,handleFlag) values ('6164', '2017-07-27 09:50:09', '121', '浙BD31Y8', '【浙BD31Y8】 配送员【邵铁刚】已收取快件 准备运往【丽水】', '1','0','0');
+2017-07-28 09:44:31:添加结果：True
+2017-07-28 09:46:55:添加冷链数据上报进度失败,但未影响该节点上报:索引超出范围。必须为非负值并小于集合大小。参数名: index
+2017-07-28 09:46:58:退出节点逻辑
+2017-07-28 09:46:58:--------------------------------------------------------------
+2017-07-28 09:48:36:--------------------------------------------------------------
+2017-07-28 09:48:36:上报第三方运单节点HD123456,customerId:669,parentStorageId
+2017-07-28 09:48:41:进入创建运单节点逻辑HD123456,操作时间2017/7/27 星期四 上午 9:50:09
+2017-07-28 09:48:41:(上报节点)NodeNumber=HD123456;Content=【浙BD31Y8】 配送员【邵铁刚】已收取快件 准备运往【丽水】;CustomerId=669
+2017-07-28 09:48:41:第三方运单需要查询关系表获取转换后的运单号select number from huadong_tmsorder_waybillbase where relationid='HD123456' and customerId=669,结果：9910HD123456
+2017-07-28 09:48:41:查询运单是否存在:select * from waybill_base where number = '9910HD123456' order by id desc limit 1
+2017-07-28 09:48:41:当前运单存在,开始添加节点
+2017-07-28 09:48:41:查询该运单已有的所有节点:select id, convert(baseId, CHAR) as baseId ,operateAt,storageId,storageName,content,arrived from waybill_node where baseId = 6164,查询到的节点条数：0
+2017-07-28 09:48:41:添加节点:insert into waybill_node (baseId,operateAt,storageId,storageName,content,arrived,parentStorageId,handleFlag) values ('6164', '2017-07-27 09:50:09', '121', '浙BD31Y8', '【浙BD31Y8】 配送员【邵铁刚】已收取快件 准备运往【丽水】', '1','0','0');
+2017-07-28 09:48:41:添加结果：True
+2017-07-28 09:50:04:添加上报处理进度:INSERT INTO `uploadDataProgress` ( `relationId`, `storageId`, `storageName`, `nodeParentStorageId`, `nodeTime`, `endNodeTime`, `uploadProgress`, `lastHandleTime`, `handleFlag`) VALUES ( 'HD123456', '121', '浙BD31Y8', '0', '2017-07-27 09:50:09', NULL, '2017-07-27 09:50:09', '2017/7/28 星期五 上午 9:48:46','0');
+2017-07-28 09:51:51:添加冷链数据上报进度失败,但未影响该节点上报:Incorrect datetime value: '2017/7/28 星期五 上午 9:48:46' for column 'lastHandleTime' at row 1
+2017-07-28 09:51:55:退出节点逻辑
+2017-07-28 09:51:55:--------------------------------------------------------------
+2017-07-28 09:52:31:--------------------------------------------------------------
+2017-07-28 09:52:31:上报第三方运单节点HD123456,customerId:669,parentStorageId
+2017-07-28 09:52:43:进入创建运单节点逻辑HD123456,操作时间2017/7/27 星期四 上午 9:50:09
+2017-07-28 09:52:43:(上报节点)NodeNumber=HD123456;Content=【浙BD31Y8】 配送员【邵铁刚】已收取快件 准备运往【丽水】;CustomerId=669
+2017-07-28 09:52:43:第三方运单需要查询关系表获取转换后的运单号select number from huadong_tmsorder_waybillbase where relationid='HD123456' and customerId=669,结果：9910HD123456
+2017-07-28 09:52:44:查询运单是否存在:select * from waybill_base where number = '9910HD123456' order by id desc limit 1
+2017-07-28 09:52:44:当前运单存在,开始添加节点
+2017-07-28 09:52:44:查询该运单已有的所有节点:select id, convert(baseId, CHAR) as baseId ,operateAt,storageId,storageName,content,arrived from waybill_node where baseId = 6164,查询到的节点条数：0
+2017-07-28 09:52:44:添加节点:insert into waybill_node (baseId,operateAt,storageId,storageName,content,arrived,parentStorageId,handleFlag) values ('6164', '2017-07-27 09:50:09', '121', '浙BD31Y8', '【浙BD31Y8】 配送员【邵铁刚】已收取快件 准备运往【丽水】', '1','0','0');
+2017-07-28 09:52:44:添加结果：True
+2017-07-28 09:53:27:退出节点逻辑
+2017-07-28 09:53:27:--------------------------------------------------------------
+2017-07-28 09:53:29:-------------------------------------------------------------------
+2017-07-28 09:53:29:上传图片HD123456,DateTime:2017/7/27 星期四 上午 9:52:56,customerId:669
+2017-07-28 09:53:29:开始进入保存图片逻辑HD123456，DateTime:2017/7/27 星期四 上午 9:52:56
+2017-07-28 09:53:29:查询关联表，huadong_tmsorder_waybillbase:select number from huadong_tmsorder_waybillbase where relationid='HD123456' and customerId=669,结果:9910HD123456
+2017-07-28 09:53:31:保存图片失败:登录失败: 未知的用户名或错误密码。
+2017-07-28 09:53:31:图片错误
+2017-07-28 09:53:31:--------------------------------------------------------------
+2017-07-28 09:53:38:--------------------------------------------------------------
+2017-07-28 09:53:38:上报第三方运单节点HD123456,customerId:669,parentStorageId
+2017-07-28 09:53:43:进入创建运单节点逻辑HD123456,操作时间2017/7/27 星期四 上午 9:51:07
+2017-07-28 09:53:43:(上报节点)NodeNumber=HD123456;Content=【浙B287R6】 配送员已出发 准备运往【丽水】;CustomerId=669
+2017-07-28 09:53:43:第三方运单需要查询关系表获取转换后的运单号select number from huadong_tmsorder_waybillbase where relationid='HD123456' and customerId=669,结果：9910HD123456
+2017-07-28 09:53:43:查询运单是否存在:select * from waybill_base where number = '9910HD123456' order by id desc limit 1
+2017-07-28 09:53:43:当前运单存在,开始添加节点
+2017-07-28 09:53:43:查询该运单已有的所有节点:select id, convert(baseId, CHAR) as baseId ,operateAt,storageId,storageName,content,arrived from waybill_node where baseId = 6164,查询到的节点条数：1
+2017-07-28 09:53:43:添加节点:insert into waybill_node (baseId,operateAt,storageId,storageName,content,arrived,parentStorageId,handleFlag) values ('6164', '2017-07-27 09:51:07', '101', '浙B287R6', '【浙B287R6】 配送员已出发 准备运往【丽水】', '1','121','0');
+2017-07-28 09:53:43:添加结果：True
+2017-07-28 09:53:56:退出节点逻辑
+2017-07-28 09:53:56:--------------------------------------------------------------
+2017-07-28 09:53:56:-------------------------------------------------------------------
+2017-07-28 09:53:56:上传图片HD123456,DateTime:2017/7/27 星期四 上午 9:52:56,customerId:669
+2017-07-28 09:53:56:开始进入保存图片逻辑HD123456，DateTime:2017/7/27 星期四 上午 9:52:56
+2017-07-28 09:53:56:查询关联表，huadong_tmsorder_waybillbase:select number from huadong_tmsorder_waybillbase where relationid='HD123456' and customerId=669,结果:9910HD123456
+2017-07-28 09:53:57:保存图片失败:登录失败: 未知的用户名或错误密码。
+2017-07-28 09:53:57:图片错误
+2017-07-28 09:53:57:--------------------------------------------------------------
+2017-07-28 09:54:02:--------------------------------------------------------------
+2017-07-28 09:54:02:上报第三方运单节点HD123456,customerId:669,parentStorageId
+2017-07-28 09:54:09:进入创建运单节点逻辑HD123456,操作时间2017/7/27 星期四 上午 9:52:02
+2017-07-28 09:54:09:(上报节点)NodeNumber=HD123456;Content=【浙BH7S21】 配送员【朱建杭】已出发 准备运往【丽水】;CustomerId=669
+2017-07-28 09:54:09:第三方运单需要查询关系表获取转换后的运单号select number from huadong_tmsorder_waybillbase where relationid='HD123456' and customerId=669,结果：9910HD123456
+2017-07-28 09:54:09:查询运单是否存在:select * from waybill_base where number = '9910HD123456' order by id desc limit 1
+2017-07-28 09:54:09:当前运单存在,开始添加节点
+2017-07-28 09:54:09:查询该运单已有的所有节点:select id, convert(baseId, CHAR) as baseId ,operateAt,storageId,storageName,content,arrived from waybill_node where baseId = 6164,查询到的节点条数：2
+2017-07-28 09:54:09:添加节点:insert into waybill_node (baseId,operateAt,storageId,storageName,content,arrived,parentStorageId,handleFlag) values ('6164', '2017-07-27 09:52:02', '108', '浙BH7S21', '【浙BH7S21】 配送员【朱建杭】已出发 准备运往【丽水】', '1','101','0');
+2017-07-28 09:54:09:添加结果：True
+2017-07-28 09:54:14:退出节点逻辑
+2017-07-28 09:54:14:--------------------------------------------------------------
+2017-07-28 09:54:14:-------------------------------------------------------------------
+2017-07-28 09:54:14:上传图片HD123456,DateTime:2017/7/27 星期四 上午 9:52:56,customerId:669
+2017-07-28 09:54:14:开始进入保存图片逻辑HD123456，DateTime:2017/7/27 星期四 上午 9:52:56
+2017-07-28 09:54:14:查询关联表，huadong_tmsorder_waybillbase:select number from huadong_tmsorder_waybillbase where relationid='HD123456' and customerId=669,结果:9910HD123456
+2017-07-28 09:54:16:保存图片失败:登录失败: 未知的用户名或错误密码。
+2017-07-28 09:54:16:图片错误
+2017-07-28 09:54:16:--------------------------------------------------------------
+2017-07-28 09:54:20:--------------------------------------------------------------
+2017-07-28 09:54:20:上报第三方运单节点HD123456,customerId:669,parentStorageId
+2017-07-28 09:54:21:进入创建运单节点逻辑HD123456,操作时间2017/7/27 星期四 上午 9:52:22
+2017-07-28 09:54:21:(上报节点)NodeNumber=HD123456;Content=【浙BH7S21】 运抵卸车;CustomerId=669
+2017-07-28 09:54:21:第三方运单需要查询关系表获取转换后的运单号select number from huadong_tmsorder_waybillbase where relationid='HD123456' and customerId=669,结果：9910HD123456
+2017-07-28 09:54:21:查询运单是否存在:select * from waybill_base where number = '9910HD123456' order by id desc limit 1
+2017-07-28 09:54:21:当前运单存在,开始添加节点
+2017-07-28 09:54:21:查询该运单已有的所有节点:select id, convert(baseId, CHAR) as baseId ,operateAt,storageId,storageName,content,arrived from waybill_node where baseId = 6164,查询到的节点条数：3
+2017-07-28 09:54:21:添加节点:insert into waybill_node (baseId,operateAt,storageId,storageName,content,arrived,parentStorageId,handleFlag) values ('6164', '2017-07-27 09:52:22', '108', '浙BH7S21', '【浙BH7S21】 运抵卸车', '2','108','0');
+2017-07-28 09:54:21:添加节点:update waybill_base set stage=1 ,signinAt='2017/7/27 星期四 上午 9:52:22' where number='9910HD123456';
+2017-07-28 09:54:22:添加节点失败:Incorrect datetime value: '2017/7/27 星期四 上午 9:52:22' for column 'signinAt' at row 6164
+2017-07-28 09:54:23:节点错误
+2017-07-28 09:54:23:--------------------------------------------------------------
+2017-07-28 09:54:23:-------------------------------------------------------------------
+2017-07-28 09:54:23:上传图片HD123456,DateTime:2017/7/27 星期四 上午 9:52:56,customerId:669
+2017-07-28 09:54:23:开始进入保存图片逻辑HD123456，DateTime:2017/7/27 星期四 上午 9:52:56
+2017-07-28 09:54:23:查询关联表，huadong_tmsorder_waybillbase:select number from huadong_tmsorder_waybillbase where relationid='HD123456' and customerId=669,结果:9910HD123456
+2017-07-28 09:54:25:保存图片失败:登录失败: 未知的用户名或错误密码。
+2017-07-28 09:54:25:图片错误
+2017-07-28 09:54:25:--------------------------------------------------------------
+2017-07-28 09:54:29:--------------------------------------------------------------
+2017-07-28 09:54:29:上报第三方运单节点HD123456,customerId:669,parentStorageId
+2017-07-28 09:54:33:进入创建运单节点逻辑HD123456,操作时间2017/7/27 星期四 上午 9:52:22
+2017-07-28 09:54:33:(上报节点)NodeNumber=HD123456;Content=【浙BH7S21】 运抵卸车;CustomerId=669
+2017-07-28 09:54:33:第三方运单需要查询关系表获取转换后的运单号select number from huadong_tmsorder_waybillbase where relationid='HD123456' and customerId=669,结果：9910HD123456
+2017-07-28 09:54:33:查询运单是否存在:select * from waybill_base where number = '9910HD123456' order by id desc limit 1
+2017-07-28 09:54:33:当前运单存在,开始添加节点
+2017-07-28 09:54:33:查询该运单已有的所有节点:select id, convert(baseId, CHAR) as baseId ,operateAt,storageId,storageName,content,arrived from waybill_node where baseId = 6164,查询到的节点条数：3
+2017-07-28 09:54:33:添加节点:insert into waybill_node (baseId,operateAt,storageId,storageName,content,arrived,parentStorageId,handleFlag) values ('6164', '2017-07-27 09:52:22', '108', '浙BH7S21', '【浙BH7S21】 运抵卸车', '2','108','0');
+2017-07-28 09:54:33:添加节点:update waybill_base set stage=1 ,signinAt='2017/7/27 星期四 上午 9:52:22' where number='9910HD123456';
+2017-07-28 09:54:33:添加节点失败:Incorrect datetime value: '2017/7/27 星期四 上午 9:52:22' for column 'signinAt' at row 6164
+2017-07-28 09:54:48:节点错误
+2017-07-28 09:54:48:--------------------------------------------------------------
+2017-07-28 09:54:48:-------------------------------------------------------------------
+2017-07-28 09:54:48:上传图片HD123456,DateTime:2017/7/27 星期四 上午 9:52:56,customerId:669
+2017-07-28 09:54:48:开始进入保存图片逻辑HD123456，DateTime:2017/7/27 星期四 上午 9:52:56
+2017-07-28 09:54:48:查询关联表，huadong_tmsorder_waybillbase:select number from huadong_tmsorder_waybillbase where relationid='HD123456' and customerId=669,结果:9910HD123456
+2017-07-28 09:54:49:保存图片失败:登录失败: 未知的用户名或错误密码。
+2017-07-28 09:54:49:图片错误
+2017-07-28 09:54:49:--------------------------------------------------------------
+2017-07-28 09:54:53:--------------------------------------------------------------
+2017-07-28 09:54:53:上报第三方运单节点HD123456,customerId:669,parentStorageId
+2017-07-28 09:55:20:进入创建运单节点逻辑HD123456,操作时间2017/7/27 星期四 上午 9:52:22
+2017-07-28 09:55:20:(上报节点)NodeNumber=HD123456;Content=【浙BH7S21】 运抵卸车;CustomerId=669
+2017-07-28 09:55:26:第三方运单需要查询关系表获取转换后的运单号select number from huadong_tmsorder_waybillbase where relationid='HD123456' and customerId=669,结果：9910HD123456
+2017-07-28 09:55:34:查询运单是否存在:select * from waybill_base where number = '9910HD123456' order by id desc limit 1
+2017-07-28 09:55:37:当前运单存在,开始添加节点
+2017-07-28 09:55:47:查询该运单已有的所有节点:select id, convert(baseId, CHAR) as baseId ,operateAt,storageId,storageName,content,arrived from waybill_node where baseId = 6164,查询到的节点条数：3
+2017-07-28 09:56:18:添加节点:insert into waybill_node (baseId,operateAt,storageId,storageName,content,arrived,parentStorageId,handleFlag) values ('6164', '2017-07-27 09:52:22', '108', '浙BH7S21', '【浙BH7S21】 运抵卸车', '2','108','0');
+2017-07-28 09:56:20:添加节点:update waybill_base set stage=1 ,signinAt='2017/7/27 星期四 上午 9:52:22' where number='9910HD123456';
+2017-07-28 09:57:26:添加节点失败:Incorrect datetime value: '2017/7/27 星期四 上午 9:52:22' for column 'signinAt' at row 6164
+2017-07-28 09:57:29:节点错误
+2017-07-28 09:57:29:--------------------------------------------------------------
+2017-07-28 09:57:29:--------------------------------------------------------------
+2017-07-28 09:57:29:上报第三方运单节点HD123456,customerId:669,parentStorageId
+2017-07-28 09:57:30:进入创建运单节点逻辑HD123456,操作时间2017/7/27 星期四 上午 9:52:22
+2017-07-28 09:57:30:(上报节点)NodeNumber=HD123456;Content=【浙BH7S21】 运抵卸车;CustomerId=669
+2017-07-28 09:57:30:第三方运单需要查询关系表获取转换后的运单号select number from huadong_tmsorder_waybillbase where relationid='HD123456' and customerId=669,结果：9910HD123456
+2017-07-28 09:57:30:查询运单是否存在:select * from waybill_base where number = '9910HD123456' order by id desc limit 1
+2017-07-28 09:57:30:当前运单存在,开始添加节点
+2017-07-28 09:57:30:查询该运单已有的所有节点:select id, convert(baseId, CHAR) as baseId ,operateAt,storageId,storageName,content,arrived from waybill_node where baseId = 6164,查询到的节点条数：3
+2017-07-28 09:57:30:添加节点:insert into waybill_node (baseId,operateAt,storageId,storageName,content,arrived,parentStorageId,handleFlag) values ('6164', '2017-07-27 09:52:22', '108', '浙BH7S21', '【浙BH7S21】 运抵卸车', '2','108','0');
+2017-07-28 09:57:30:添加节点:update waybill_base set stage=1 ,signinAt='2017-07-27 09:52:22' where number='9910HD123456';
+2017-07-28 09:57:31:添加结果：True
+2017-07-28 09:57:39:退出节点逻辑
+2017-07-28 09:57:39:--------------------------------------------------------------
+2017-07-28 09:57:39:-------------------------------------------------------------------
+2017-07-28 09:57:39:上传图片HD123456,DateTime:2017/7/27 星期四 上午 9:52:56,customerId:669
+2017-07-28 09:57:39:开始进入保存图片逻辑HD123456，DateTime:2017/7/27 星期四 上午 9:52:56
+2017-07-28 09:57:39:查询关联表，huadong_tmsorder_waybillbase:select number from huadong_tmsorder_waybillbase where relationid='HD123456' and customerId=669,结果:9910HD123456
+2017-07-28 09:57:40:保存图片失败:登录失败: 未知的用户名或错误密码。
+2017-07-28 09:57:40:图片错误
+2017-07-28 09:57:40:--------------------------------------------------------------
+2017-07-28 09:57:44:-------------------------------------------------------------------
+2017-07-28 09:57:44:上传图片HD123456,DateTime:2017/7/27 星期四 上午 9:52:56,customerId:669
+2017-07-28 09:57:44:开始进入保存图片逻辑HD123456，DateTime:2017/7/27 星期四 上午 9:52:56
+2017-07-28 09:57:44:查询关联表，huadong_tmsorder_waybillbase:select number from huadong_tmsorder_waybillbase where relationid='HD123456' and customerId=669,结果:9910HD123456
+2017-07-28 09:57:46:保存图片失败:登录失败: 未知的用户名或错误密码。
+2017-07-28 09:57:46:图片错误
+2017-07-28 09:57:46:--------------------------------------------------------------
+2017-07-28 09:57:50:-------------------------------------------------------------------
+2017-07-28 09:57:50:上传图片HD123456,DateTime:2017/7/27 星期四 上午 9:52:56,customerId:669
+2017-07-28 09:57:50:开始进入保存图片逻辑HD123456，DateTime:2017/7/27 星期四 上午 9:52:56
+2017-07-28 09:57:50:查询关联表，huadong_tmsorder_waybillbase:select number from huadong_tmsorder_waybillbase where relationid='HD123456' and customerId=669,结果:9910HD123456
+2017-07-28 09:57:52:保存图片失败:登录失败: 未知的用户名或错误密码。
+2017-07-28 09:57:52:图片错误
+2017-07-28 09:57:52:--------------------------------------------------------------
+2017-07-28 09:57:56:-------------------------------------------------------------------
+2017-07-28 09:57:56:上传图片HD123456,DateTime:2017/7/27 星期四 上午 9:52:56,customerId:669
+2017-07-28 09:57:56:开始进入保存图片逻辑HD123456，DateTime:2017/7/27 星期四 上午 9:52:56
+2017-07-28 09:57:56:查询关联表，huadong_tmsorder_waybillbase:select number from huadong_tmsorder_waybillbase where relationid='HD123456' and customerId=669,结果:9910HD123456
+2017-07-28 09:57:58:保存图片失败:登录失败: 未知的用户名或错误密码。
+2017-07-28 09:57:58:图片错误
+2017-07-28 09:57:58:--------------------------------------------------------------
+2017-07-28 09:58:05:-------------------------------------------------------------------
+2017-07-28 09:58:05:上传图片HD123456,DateTime:2017/7/27 星期四 上午 9:52:56,customerId:669
+2017-07-28 09:58:05:开始进入保存图片逻辑HD123456，DateTime:2017/7/27 星期四 上午 9:52:56
+2017-07-28 09:58:05:查询关联表，huadong_tmsorder_waybillbase:select number from huadong_tmsorder_waybillbase where relationid='HD123456' and customerId=669,结果:9910HD123456
+2017-07-28 09:58:06:保存图片失败:登录失败: 未知的用户名或错误密码。
+2017-07-28 09:58:06:图片错误
+2017-07-28 09:58:06:--------------------------------------------------------------
+2017-07-28 09:58:11:-------------------------------------------------------------------
+2017-07-28 09:58:11:上传图片HD123456,DateTime:2017/7/27 星期四 上午 9:52:56,customerId:669
+2017-07-28 09:58:56:开始进入保存图片逻辑HD123456，DateTime:2017/7/27 星期四 上午 9:52:56
+2017-07-28 09:59:20:查询关联表，huadong_tmsorder_waybillbase:select number from huadong_tmsorder_waybillbase where relationid='HD123456' and customerId=669,结果:9910HD123456

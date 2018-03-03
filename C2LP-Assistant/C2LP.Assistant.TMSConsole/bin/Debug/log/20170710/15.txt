@@ -1,0 +1,71 @@
+2017-07-10 15:00:57:开始查询下一个上报节点
+2017-07-10 15:00:58:CECNO:991000000018,LEGNO:HD2524847
+2017-07-10 15:01:11:开始查询下一个上报节点
+2017-07-10 15:01:11:CECNO:991000000018,LEGNO:HD2524847
+2017-07-10 15:01:16:开始查询下一个上报节点
+2017-07-10 15:01:16:CECNO:991000000018,LEGNO:HD2524847
+2017-07-10 15:01:21:开始查询下一个上报节点
+2017-07-10 15:01:21:CECNO:991000000018,LEGNO:HD2524847
+2017-07-10 15:02:45:开始查询下一个上报节点
+2017-07-10 15:02:47:CECNO:991000000018,LEGNO:HD2524847
+2017-07-10 15:03:09:开始查询下一个上报节点
+2017-07-10 15:03:23:CECNO:991000000018,LEGNO:HD2524847
+2017-07-10 15:05:58:开始查询下一个上报节点
+2017-07-10 15:06:00:CECNO:991000000018,LEGNO:HD2524847
+2017-07-10 15:06:00:select ShipmentCode from huadong_tms_order where relationId = 'HD2524847' limit 1
+2017-07-10 15:06:00:根据关系ID获取TMS运单的派车单号:161130108
+2017-07-10 15:06:00:ECNO:161130108,CECNO:991000000018
+2017-07-10 15:06:01:上传前：&lt;?xml version="1.0"?&gt;&lt;XML xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;  &lt;MESSAGEHEAD&gt;    &lt;SENDER&gt;NBJC01160122&lt;/SENDER&gt;    &lt;FILETYPE&gt;XML&lt;/FILETYPE&gt;    &lt;CONTENTTYPE&gt;CarrierTrackRecord&lt;/CONTENTTYPE&gt;    &lt;SENDTIME&gt;2017-07-10 15:05:56&lt;/SENDTIME&gt;    &lt;FILENAME&gt;20170710150556&lt;/FILENAME&gt;    &lt;FILEFUNCTION&gt;ADD&lt;/FILEFUNCTION&gt;  &lt;/MESSAGEHEAD&gt;  &lt;MESSAGEDETAIL&gt;&lt;![CDATA[&lt;?xml version="1.0"?&gt;&lt;XML xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;  &lt;CONTENTLIST&gt;    &lt;CONTENT&gt;      &lt;HEADER /&gt;      &lt;DETAILLIST&gt;        &lt;DETAIL&gt;          &lt;ECNO&gt;161130108&lt;/ECNO&gt;          &lt;CECNO&gt;991000000018&lt;/CECNO&gt;          &lt;LEGNO&gt;HD2524847&lt;/LEGNO&gt;          &lt;TRACKTIME&gt;2017-03-01 20:47:14&lt;/TRACKTIME&gt;          &lt;TRACKPERSON&gt;邵铁钢&lt;/TRACKPERSON&gt;          &lt;TRACKINFO&gt;已收取快件&lt;/TRACKINFO&gt;          &lt;TRACKTYPE&gt;15&lt;/TRACKTYPE&gt;        &lt;/DETAIL&gt;      &lt;/DETAILLIST&gt;    &lt;/CONTENT&gt;  &lt;/CONTENTLIST&gt;&lt;/XML&gt;]]&gt;&lt;/MESSAGEDETAIL&gt;&lt;/XML&gt;
+2017-07-10 15:06:07:开始查询下一个上报节点
+2017-07-10 15:06:07:CECNO:991000000018,LEGNO:HD2524847
+2017-07-10 15:06:07:select ShipmentCode from huadong_tms_order where relationId = 'HD2524847' limit 1
+2017-07-10 15:06:07:根据关系ID获取TMS运单的派车单号:161130108
+2017-07-10 15:06:07:ECNO:161130108,CECNO:991000000018
+2017-07-10 15:06:07:上传前：&lt;?xml version="1.0"?&gt;&lt;XML xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;  &lt;MESSAGEHEAD&gt;    &lt;SENDER&gt;NBJC01160122&lt;/SENDER&gt;    &lt;FILETYPE&gt;XML&lt;/FILETYPE&gt;    &lt;CONTENTTYPE&gt;CarrierTrackRecord&lt;/CONTENTTYPE&gt;    &lt;SENDTIME&gt;2017-07-10 15:06:07&lt;/SENDTIME&gt;    &lt;FILENAME&gt;20170710150607&lt;/FILENAME&gt;    &lt;FILEFUNCTION&gt;ADD&lt;/FILEFUNCTION&gt;  &lt;/MESSAGEHEAD&gt;  &lt;MESSAGEDETAIL&gt;&lt;![CDATA[&lt;?xml version="1.0"?&gt;&lt;XML xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;  &lt;CONTENTLIST&gt;    &lt;CONTENT&gt;      &lt;HEADER /&gt;      &lt;DETAILLIST&gt;        &lt;DETAIL&gt;          &lt;ECNO&gt;161130108&lt;/ECNO&gt;          &lt;CECNO&gt;991000000018&lt;/CECNO&gt;          &lt;LEGNO&gt;HD2524847&lt;/LEGNO&gt;          &lt;TRACKTIME&gt;2017-03-01 23:34:28&lt;/TRACKTIME&gt;          &lt;TRACKPERSON /&gt;          &lt;TRACKINFO&gt;【冷藏库】 中转入库&lt;/TRACKINFO&gt;          &lt;TRACKTYPE&gt;16&lt;/TRACKTYPE&gt;        &lt;/DETAIL&gt;      &lt;/DETAILLIST&gt;    &lt;/CONTENT&gt;  &lt;/CONTENTLIST&gt;&lt;/XML&gt;]]&gt;&lt;/MESSAGEDETAIL&gt;&lt;/XML&gt;
+2017-07-10 15:06:12:开始查询下一个上报节点
+2017-07-10 15:06:12:CECNO:991000000018,LEGNO:HD2524847
+2017-07-10 15:06:12:select ShipmentCode from huadong_tms_order where relationId = 'HD2524847' limit 1
+2017-07-10 15:06:12:根据关系ID获取TMS运单的派车单号:161130108
+2017-07-10 15:06:12:ECNO:161130108,CECNO:991000000018
+2017-07-10 15:06:12:上传前：&lt;?xml version="1.0"?&gt;&lt;XML xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;  &lt;MESSAGEHEAD&gt;    &lt;SENDER&gt;NBJC01160122&lt;/SENDER&gt;    &lt;FILETYPE&gt;XML&lt;/FILETYPE&gt;    &lt;CONTENTTYPE&gt;CarrierTrackRecord&lt;/CONTENTTYPE&gt;    &lt;SENDTIME&gt;2017-07-10 15:06:12&lt;/SENDTIME&gt;    &lt;FILENAME&gt;20170710150612&lt;/FILENAME&gt;    &lt;FILEFUNCTION&gt;ADD&lt;/FILEFUNCTION&gt;  &lt;/MESSAGEHEAD&gt;  &lt;MESSAGEDETAIL&gt;&lt;![CDATA[&lt;?xml version="1.0"?&gt;&lt;XML xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;  &lt;CONTENTLIST&gt;    &lt;CONTENT&gt;      &lt;HEADER /&gt;      &lt;DETAILLIST&gt;        &lt;DETAIL&gt;          &lt;ECNO&gt;161130108&lt;/ECNO&gt;          &lt;CECNO&gt;991000000018&lt;/CECNO&gt;          &lt;LEGNO&gt;HD2524847&lt;/LEGNO&gt;          &lt;TRACKTIME&gt;2017-03-02 03:57:12&lt;/TRACKTIME&gt;          &lt;TRACKPERSON&gt;余国庆&lt;/TRACKPERSON&gt;          &lt;TRACKINFO&gt;【浙BP79C2】 配送员【余国庆】已出发 准备运往【东阳】&lt;/TRACKINFO&gt;          &lt;TRACKTYPE&gt;17&lt;/TRACKTYPE&gt;        &lt;/DETAIL&gt;      &lt;/DETAILLIST&gt;    &lt;/CONTENT&gt;  &lt;/CONTENTLIST&gt;&lt;/XML&gt;]]&gt;&lt;/MESSAGEDETAIL&gt;&lt;/XML&gt;
+2017-07-10 15:08:38:开始查询下一个上报节点
+2017-07-10 15:08:39:CECNO:991000000018,LEGNO:HD2524847
+2017-07-10 15:08:39:select ShipmentCode from huadong_tms_order where relationId = 'HD2524847' limit 1
+2017-07-10 15:08:39:根据关系ID获取TMS运单的派车单号:161130108
+2017-07-10 15:08:39:ECNO:161130108,CECNO:991000000018
+2017-07-10 15:08:39:上传前：&lt;?xml version="1.0"?&gt;&lt;XML xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;  &lt;MESSAGEHEAD&gt;    &lt;SENDER&gt;NBJC01160122&lt;/SENDER&gt;    &lt;FILETYPE&gt;XML&lt;/FILETYPE&gt;    &lt;CONTENTTYPE&gt;CarrierTrackRecord&lt;/CONTENTTYPE&gt;    &lt;SENDTIME&gt;2017-07-10 15:08:38&lt;/SENDTIME&gt;    &lt;FILENAME&gt;20170710150838&lt;/FILENAME&gt;    &lt;FILEFUNCTION&gt;ADD&lt;/FILEFUNCTION&gt;  &lt;/MESSAGEHEAD&gt;  &lt;MESSAGEDETAIL&gt;&lt;![CDATA[&lt;?xml version="1.0"?&gt;&lt;XML xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;  &lt;CONTENTLIST&gt;    &lt;CONTENT&gt;      &lt;HEADER /&gt;      &lt;DETAILLIST&gt;        &lt;DETAIL&gt;          &lt;ECNO&gt;161130108&lt;/ECNO&gt;          &lt;CECNO&gt;991000000018&lt;/CECNO&gt;          &lt;LEGNO&gt;HD2524847&lt;/LEGNO&gt;          &lt;TRACKTIME&gt;2017-03-01 20:47:14&lt;/TRACKTIME&gt;          &lt;TRACKPERSON&gt;邵铁钢&lt;/TRACKPERSON&gt;          &lt;TRACKINFO&gt;已收取快件&lt;/TRACKINFO&gt;          &lt;TRACKTYPE&gt;15&lt;/TRACKTYPE&gt;        &lt;/DETAIL&gt;      &lt;/DETAILLIST&gt;    &lt;/CONTENT&gt;  &lt;/CONTENTLIST&gt;&lt;/XML&gt;]]&gt;&lt;/MESSAGEDETAIL&gt;&lt;/XML&gt;
+2017-07-10 15:08:44:开始查询下一个上报节点
+2017-07-10 15:08:45:CECNO:991000000018,LEGNO:HD2524847
+2017-07-10 15:08:45:select ShipmentCode from huadong_tms_order where relationId = 'HD2524847' limit 1
+2017-07-10 15:08:45:根据关系ID获取TMS运单的派车单号:161130108
+2017-07-10 15:08:45:ECNO:161130108,CECNO:991000000018
+2017-07-10 15:08:45:上传前：&lt;?xml version="1.0"?&gt;&lt;XML xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;  &lt;MESSAGEHEAD&gt;    &lt;SENDER&gt;NBJC01160122&lt;/SENDER&gt;    &lt;FILETYPE&gt;XML&lt;/FILETYPE&gt;    &lt;CONTENTTYPE&gt;CarrierTrackRecord&lt;/CONTENTTYPE&gt;    &lt;SENDTIME&gt;2017-07-10 15:08:44&lt;/SENDTIME&gt;    &lt;FILENAME&gt;20170710150844&lt;/FILENAME&gt;    &lt;FILEFUNCTION&gt;ADD&lt;/FILEFUNCTION&gt;  &lt;/MESSAGEHEAD&gt;  &lt;MESSAGEDETAIL&gt;&lt;![CDATA[&lt;?xml version="1.0"?&gt;&lt;XML xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;  &lt;CONTENTLIST&gt;    &lt;CONTENT&gt;      &lt;HEADER /&gt;      &lt;DETAILLIST&gt;        &lt;DETAIL&gt;          &lt;ECNO&gt;161130108&lt;/ECNO&gt;          &lt;CECNO&gt;991000000018&lt;/CECNO&gt;          &lt;LEGNO&gt;HD2524847&lt;/LEGNO&gt;          &lt;TRACKTIME&gt;2017-03-01 23:34:28&lt;/TRACKTIME&gt;          &lt;TRACKPERSON /&gt;          &lt;TRACKINFO&gt;【冷藏库】 中转入库&lt;/TRACKINFO&gt;          &lt;TRACKTYPE&gt;16&lt;/TRACKTYPE&gt;        &lt;/DETAIL&gt;      &lt;/DETAILLIST&gt;    &lt;/CONTENT&gt;  &lt;/CONTENTLIST&gt;&lt;/XML&gt;]]&gt;&lt;/MESSAGEDETAIL&gt;&lt;/XML&gt;
+2017-07-10 15:08:50:开始查询下一个上报节点
+2017-07-10 15:08:50:CECNO:991000000018,LEGNO:HD2524847
+2017-07-10 15:08:50:select ShipmentCode from huadong_tms_order where relationId = 'HD2524847' limit 1
+2017-07-10 15:08:50:根据关系ID获取TMS运单的派车单号:161130108
+2017-07-10 15:08:50:ECNO:161130108,CECNO:991000000018
+2017-07-10 15:08:50:上传前：&lt;?xml version="1.0"?&gt;&lt;XML xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;  &lt;MESSAGEHEAD&gt;    &lt;SENDER&gt;NBJC01160122&lt;/SENDER&gt;    &lt;FILETYPE&gt;XML&lt;/FILETYPE&gt;    &lt;CONTENTTYPE&gt;CarrierTrackRecord&lt;/CONTENTTYPE&gt;    &lt;SENDTIME&gt;2017-07-10 15:08:50&lt;/SENDTIME&gt;    &lt;FILENAME&gt;20170710150850&lt;/FILENAME&gt;    &lt;FILEFUNCTION&gt;ADD&lt;/FILEFUNCTION&gt;  &lt;/MESSAGEHEAD&gt;  &lt;MESSAGEDETAIL&gt;&lt;![CDATA[&lt;?xml version="1.0"?&gt;&lt;XML xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;  &lt;CONTENTLIST&gt;    &lt;CONTENT&gt;      &lt;HEADER /&gt;      &lt;DETAILLIST&gt;        &lt;DETAIL&gt;          &lt;ECNO&gt;161130108&lt;/ECNO&gt;          &lt;CECNO&gt;991000000018&lt;/CECNO&gt;          &lt;LEGNO&gt;HD2524847&lt;/LEGNO&gt;          &lt;TRACKTIME&gt;2017-03-02 03:57:12&lt;/TRACKTIME&gt;          &lt;TRACKPERSON&gt;余国庆&lt;/TRACKPERSON&gt;          &lt;TRACKINFO&gt;【浙BP79C2】 配送员【余国庆】已出发 准备运往【东阳】&lt;/TRACKINFO&gt;          &lt;TRACKTYPE&gt;17&lt;/TRACKTYPE&gt;        &lt;/DETAIL&gt;      &lt;/DETAILLIST&gt;    &lt;/CONTENT&gt;  &lt;/CONTENTLIST&gt;&lt;/XML&gt;]]&gt;&lt;/MESSAGEDETAIL&gt;&lt;/XML&gt;
+2017-07-10 15:08:56:开始查询下一个上报节点
+2017-07-10 15:08:56:CECNO:991000000018,LEGNO:HD2524847
+2017-07-10 15:08:56:select ShipmentCode from huadong_tms_order where relationId = 'HD2524847' limit 1
+2017-07-10 15:08:56:根据关系ID获取TMS运单的派车单号:161130108
+2017-07-10 15:08:56:ECNO:161130108,CECNO:991000000018
+2017-07-10 15:08:56:上传前：&lt;?xml version="1.0"?&gt;&lt;XML xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;  &lt;MESSAGEHEAD&gt;    &lt;SENDER&gt;NBJC01160122&lt;/SENDER&gt;    &lt;FILETYPE&gt;XML&lt;/FILETYPE&gt;    &lt;CONTENTTYPE&gt;CarrierTrackRecord&lt;/CONTENTTYPE&gt;    &lt;SENDTIME&gt;2017-07-10 15:08:56&lt;/SENDTIME&gt;    &lt;FILENAME&gt;20170710150856&lt;/FILENAME&gt;    &lt;FILEFUNCTION&gt;ADD&lt;/FILEFUNCTION&gt;  &lt;/MESSAGEHEAD&gt;  &lt;MESSAGEDETAIL&gt;&lt;![CDATA[&lt;?xml version="1.0"?&gt;&lt;XML xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;  &lt;CONTENTLIST&gt;    &lt;CONTENT&gt;      &lt;HEADER /&gt;      &lt;DETAILLIST&gt;        &lt;DETAIL&gt;          &lt;ECNO&gt;161130108&lt;/ECNO&gt;          &lt;CECNO&gt;991000000018&lt;/CECNO&gt;          &lt;LEGNO&gt;HD2524847&lt;/LEGNO&gt;          &lt;TRACKTIME&gt;2017-03-02 09:54:40&lt;/TRACKTIME&gt;          &lt;TRACKPERSON&gt;余国庆&lt;/TRACKPERSON&gt;          &lt;TRACKINFO&gt;【浙BP79C2】 运抵卸车&lt;/TRACKINFO&gt;          &lt;TRACKTYPE&gt;18&lt;/TRACKTYPE&gt;        &lt;/DETAIL&gt;      &lt;/DETAILLIST&gt;    &lt;/CONTENT&gt;  &lt;/CONTENTLIST&gt;&lt;/XML&gt;]]&gt;&lt;/MESSAGEDETAIL&gt;&lt;/XML&gt;
+2017-07-10 15:09:44:开始查询下一个上报节点
+2017-07-10 15:09:44:GetFirstWaitUploadNode异常：未将对象引用设置到对象的实例。
+2017-07-10 15:11:13:开始查询下一个上报节点
+2017-07-10 15:11:13:GetFirstWaitUploadNode异常：未将对象引用设置到对象的实例。
+2017-07-10 15:11:19:开始查询下一个上报节点
+2017-07-10 15:11:19:GetFirstWaitUploadNode异常：未将对象引用设置到对象的实例。
+2017-07-10 15:11:24:开始查询下一个上报节点
+2017-07-10 15:11:24:GetFirstWaitUploadNode异常：未将对象引用设置到对象的实例。
+2017-07-10 15:11:29:开始查询下一个上报节点
+2017-07-10 15:11:29:GetFirstWaitUploadNode异常：未将对象引用设置到对象的实例。
+2017-07-10 15:13:34:开始查询下一个上报节点
+2017-07-10 15:13:38:GetFirstWaitUploadNode异常：未将对象引用设置到对象的实例。
+2017-07-10 15:13:59:开始查询下一个上报节点
+2017-07-10 15:35:15:select ShipmentCode from huadong_tms_order where relationId = 'HD2524847' limit 1
+2017-07-10 15:35:15:根据关系ID获取TMS运单的派车单号:161130108
+2017-07-10 15:35:15:dModel:ECNO:161130108,LEGNO:HD2524847,RelationId:HD2524847
+2017-07-10 15:35:28:detail:ECNO:161130108,LEGNO:HD2524847

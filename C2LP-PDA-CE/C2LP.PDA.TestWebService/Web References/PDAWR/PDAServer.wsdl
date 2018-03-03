@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="PDAServer" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://192.168.0.150:8002/PDAServer?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://192.168.0.150:8002/PDAServer?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.0.150:8002/PDAServer?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" />
+      <xsd:import schemaLocation="http://192.168.0.150:8002/PDAServer?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model.MyEnum" />
+      <xsd:import schemaLocation="http://192.168.0.150:8002/PDAServer?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPDAInterface_GetPDAInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPDAInfo" />
+  </wsdl:message>
+  <wsdl:message name="IPDAInterface_GetPDAInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPDAInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPDAInterface_GetDestins_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDestins" />
+  </wsdl:message>
+  <wsdl:message name="IPDAInterface_GetDestins_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDestinsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPDAInterface_GetStorages_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStorages" />
+  </wsdl:message>
+  <wsdl:message name="IPDAInterface_GetStorages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStoragesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPDAInterface_GetCustomers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomers" />
+  </wsdl:message>
+  <wsdl:message name="IPDAInterface_GetCustomers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPDAInterface_GetCustomersFromMaxId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomersFromMaxId" />
+  </wsdl:message>
+  <wsdl:message name="IPDAInterface_GetCustomersFromMaxId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomersFromMaxIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPDAInterface_GetRegions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegions" />
+  </wsdl:message>
+  <wsdl:message name="IPDAInterface_GetRegions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPDAInterface_GetRegionsFromMaxId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegionsFromMaxId" />
+  </wsdl:message>
+  <wsdl:message name="IPDAInterface_GetRegionsFromMaxId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegionsFromMaxIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPDAInterface_SetPDANumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetPDANumber" />
+  </wsdl:message>
+  <wsdl:message name="IPDAInterface_SetPDANumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetPDANumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPDAInterface_GetServerTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetServerTime" />
+  </wsdl:message>
+  <wsdl:message name="IPDAInterface_GetServerTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetServerTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPDAInterface_UploadWaybill_Base_InputMessage">
+    <wsdl:part name="parameters" element="tns:UploadWaybill_Base" />
+  </wsdl:message>
+  <wsdl:message name="IPDAInterface_UploadWaybill_Base_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UploadWaybill_BaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPDAInterface_UploadWaybill_Node_InputMessage">
+    <wsdl:part name="parameters" element="tns:UploadWaybill_Node" />
+  </wsdl:message>
+  <wsdl:message name="IPDAInterface_UploadWaybill_Node_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UploadWaybill_NodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPDAInterface_UploadWaybill_Postback_InputMessage">
+    <wsdl:part name="parameters" element="tns:UploadWaybill_Postback" />
+  </wsdl:message>
+  <wsdl:message name="IPDAInterface_UploadWaybill_Postback_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UploadWaybill_PostbackResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPDAInterface_UploadHuadongTmsOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:UploadHuadongTmsOrder" />
+  </wsdl:message>
+  <wsdl:message name="IPDAInterface_UploadHuadongTmsOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UploadHuadongTmsOrderResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPDAInterface">
+    <wsdl:operation name="GetPDAInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPDAInterface/GetPDAInfo" message="tns:IPDAInterface_GetPDAInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPDAInterface/GetPDAInfoResponse" message="tns:IPDAInterface_GetPDAInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDestins">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPDAInterface/GetDestins" message="tns:IPDAInterface_GetDestins_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPDAInterface/GetDestinsResponse" message="tns:IPDAInterface_GetDestins_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStorages">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPDAInterface/GetStorages" message="tns:IPDAInterface_GetStorages_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPDAInterface/GetStoragesResponse" message="tns:IPDAInterface_GetStorages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPDAInterface/GetCustomers" message="tns:IPDAInterface_GetCustomers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPDAInterface/GetCustomersResponse" message="tns:IPDAInterface_GetCustomers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomersFromMaxId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPDAInterface/GetCustomersFromMaxId" message="tns:IPDAInterface_GetCustomersFromMaxId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPDAInterface/GetCustomersFromMaxIdResponse" message="tns:IPDAInterface_GetCustomersFromMaxId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRegions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPDAInterface/GetRegions" message="tns:IPDAInterface_GetRegions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPDAInterface/GetRegionsResponse" message="tns:IPDAInterface_GetRegions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRegionsFromMaxId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPDAInterface/GetRegionsFromMaxId" message="tns:IPDAInterface_GetRegionsFromMaxId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPDAInterface/GetRegionsFromMaxIdResponse" message="tns:IPDAInterface_GetRegionsFromMaxId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetPDANumber">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPDAInterface/SetPDANumber" message="tns:IPDAInterface_SetPDANumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPDAInterface/SetPDANumberResponse" message="tns:IPDAInterface_SetPDANumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServerTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPDAInterface/GetServerTime" message="tns:IPDAInterface_GetServerTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPDAInterface/GetServerTimeResponse" message="tns:IPDAInterface_GetServerTime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadWaybill_Base">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPDAInterface/UploadWaybill_Base" message="tns:IPDAInterface_UploadWaybill_Base_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPDAInterface/UploadWaybill_BaseResponse" message="tns:IPDAInterface_UploadWaybill_Base_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadWaybill_Node">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPDAInterface/UploadWaybill_Node" message="tns:IPDAInterface_UploadWaybill_Node_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPDAInterface/UploadWaybill_NodeResponse" message="tns:IPDAInterface_UploadWaybill_Node_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadWaybill_Postback">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPDAInterface/UploadWaybill_Postback" message="tns:IPDAInterface_UploadWaybill_Postback_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPDAInterface/UploadWaybill_PostbackResponse" message="tns:IPDAInterface_UploadWaybill_Postback_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadHuadongTmsOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPDAInterface/UploadHuadongTmsOrder" message="tns:IPDAInterface_UploadHuadongTmsOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPDAInterface/UploadHuadongTmsOrderResponse" message="tns:IPDAInterface_UploadHuadongTmsOrder_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IPDAInterface" type="tns:IPDAInterface">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPDAInfo">
+      <soap:operation soapAction="http://tempuri.org/IPDAInterface/GetPDAInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDestins">
+      <soap:operation soapAction="http://tempuri.org/IPDAInterface/GetDestins" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStorages">
+      <soap:operation soapAction="http://tempuri.org/IPDAInterface/GetStorages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomers">
+      <soap:operation soapAction="http://tempuri.org/IPDAInterface/GetCustomers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomersFromMaxId">
+      <soap:operation soapAction="http://tempuri.org/IPDAInterface/GetCustomersFromMaxId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegions">
+      <soap:operation soapAction="http://tempuri.org/IPDAInterface/GetRegions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegionsFromMaxId">
+      <soap:operation soapAction="http://tempuri.org/IPDAInterface/GetRegionsFromMaxId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPDANumber">
+      <soap:operation soapAction="http://tempuri.org/IPDAInterface/SetPDANumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServerTime">
+      <soap:operation soapAction="http://tempuri.org/IPDAInterface/GetServerTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadWaybill_Base">
+      <soap:operation soapAction="http://tempuri.org/IPDAInterface/UploadWaybill_Base" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadWaybill_Node">
+      <soap:operation soapAction="http://tempuri.org/IPDAInterface/UploadWaybill_Node" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadWaybill_Postback">
+      <soap:operation soapAction="http://tempuri.org/IPDAInterface/UploadWaybill_Postback" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadHuadongTmsOrder">
+      <soap:operation soapAction="http://tempuri.org/IPDAInterface/UploadHuadongTmsOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PDAServer">
+    <wsdl:port name="BasicHttpBinding_IPDAInterface" binding="tns:BasicHttpBinding_IPDAInterface">
+      <soap:address location="http://192.168.0.150:8002/PDAServer/ws" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

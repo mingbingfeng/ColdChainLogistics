@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model.MyEnum" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model.MyEnum" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.0.153:8002/PDAServer?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:simpleType name="Enum_Active">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Enabled" />
+      <xs:enumeration value="Disable" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Enum_Active" nillable="true" type="tns:Enum_Active" />
+  <xs:simpleType name="Enum_StorageType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ColdStorage">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CarStorage">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Enum_StorageType" nillable="true" type="tns:Enum_StorageType" />
+  <xs:simpleType name="Enum_Role">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Administrator">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sender">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Receiver">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Enum_Role" nillable="true" type="tns:Enum_Role" />
+  <xs:simpleType name="Enum_Company">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Administrator" />
+      <xs:enumeration value="ThirdParty" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Enum_Company" nillable="true" type="tns:Enum_Company" />
+  <xs:simpleType name="Enum_WaybillStage">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Transporting" />
+      <xs:enumeration value="Received" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Enum_WaybillStage" nillable="true" type="tns:Enum_WaybillStage" />
+  <xs:simpleType name="Enum_Arrived">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NON" />
+      <xs:enumeration value="InTransit" />
+      <xs:enumeration value="HaveArrived" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Enum_Arrived" nillable="true" type="tns:Enum_Arrived" />
+</xs:schema>

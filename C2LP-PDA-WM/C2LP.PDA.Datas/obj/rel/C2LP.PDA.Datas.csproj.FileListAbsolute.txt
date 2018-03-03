@@ -1,0 +1,6 @@
+E:\develop\ColdChainLogistics\C2LP-PDA-WM\C2LP.PDA.Datas\bin\rel\C2LP.PDA.Datas.dll
+E:\develop\ColdChainLogistics\C2LP-PDA-WM\C2LP.PDA.Datas\bin\rel\C2LP.PDA.Datas.pdb
+E:\develop\ColdChainLogistics\C2LP-PDA-WM\C2LP.PDA.Datas\bin\rel\System.Data.SQLite.dll
+E:\develop\ColdChainLogistics\C2LP-PDA-WM\C2LP.PDA.Datas\obj\rel\ResolveAssemblyReference.cache
+E:\develop\ColdChainLogistics\C2LP-PDA-WM\C2LP.PDA.Datas\obj\rel\C2LP.PDA.Datas.dll
+E:\develop\ColdChainLogistics\C2LP-PDA-WM\C2LP.PDA.Datas\obj\rel\C2LP.PDA.Datas.pdb

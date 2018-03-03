@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.0.150:8002/PDAServer?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" />
+  <xs:import schemaLocation="http://192.168.0.150:8002/PDAServer?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="GetPDAInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="num" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPDAInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="GetPDAInfoResult" nillable="true" type="q1:ResultModelOfModel_PDAInfod4FqxSXX" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDestins">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDestinsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="GetDestinsResult" nillable="true" type="q2:ResultModelOfArrayOfstringuHEDJ7Dj" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStorages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStoragesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="GetStoragesResult" nillable="true" type="q3:ResultModelOfArrayOfModel_ColdStoraged4FqxSXX" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="GetCustomersResult" nillable="true" type="q4:ResultModelOfArrayOfModel_Customerd4FqxSXX" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomersFromMaxId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pId" type="xs:int" />
+        <xs:element minOccurs="0" name="maxId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomersFromMaxIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="GetCustomersFromMaxIdResult" nillable="true" type="q5:ResultModelOfArrayOfModel_Customerd4FqxSXX" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRegions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRegionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="GetRegionsResult" nillable="true" type="q6:ResultModelOfArrayOfPDA_Model_Regiond4FqxSXX" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRegionsFromMaxId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pId" type="xs:int" />
+        <xs:element minOccurs="0" name="maxId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRegionsFromMaxIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="GetRegionsFromMaxIdResult" nillable="true" type="q7:ResultModelOfArrayOfPDA_Model_Regiond4FqxSXX" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetPDANumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="num" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetPDANumberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="SetPDANumberResult" nillable="true" type="q8:ResultModelOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetServerTime">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetServerTimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="GetServerTimeResult" nillable="true" type="q9:ResultModelOfdateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadWaybill_Base">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="waybillList" nillable="true" type="q10:ArrayOfModel_Waybill_Base" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadWaybill_BaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="UploadWaybill_BaseResult" nillable="true" type="q11:ResultModelOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadWaybill_Node">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="nodeList" nillable="true" type="q12:ArrayOfModel_Waybill_Node" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadWaybill_NodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="UploadWaybill_NodeResult" nillable="true" type="q13:ResultModelOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadWaybill_Postback">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="postback" nillable="true" type="q14:Model_Waybill_Postback_Pic" />
+        <xs:element minOccurs="0" name="postbackTime" type="xs:dateTime" />
+        <xs:element xmlns:q15="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="picList" nillable="true" type="q15:ArrayOfanyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadWaybill_PostbackResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="UploadWaybill_PostbackResult" nillable="true" type="q16:ResultModelOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadHuadongTmsOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="huadongList" nillable="true" type="q17:ArrayOfModel_Huadong_Tms_Order" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadHuadongTmsOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="UploadHuadongTmsOrderResult" nillable="true" type="q18:ResultModelOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNewCustomers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pId" type="xs:int" />
+        <xs:element minOccurs="0" name="getTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="maxId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNewCustomersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="GetNewCustomersResult" nillable="true" type="q19:ResultModelOfArrayOfPDA_Model_Customerd4FqxSXX" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNewRegions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pId" type="xs:int" />
+        <xs:element minOccurs="0" name="getTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="maxId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNewRegionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="GetNewRegionsResult" nillable="true" type="q20:ResultModelOfArrayOfPDA_Model_Regiond4FqxSXX" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetServerTimeStr">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetServerTimeStrResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="GetServerTimeStrResult" nillable="true" type="q21:ResultModelOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadThirdPartyOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="orderInfo" nillable="true" type="q22:Model_ThirdPartOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadThirdPartyOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="UploadThirdPartyOrderResult" nillable="true" type="q23:ResultModelOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,17 @@
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.SetUploadStatusTool\bin\Debug\C2LP.WebService.SetUploadStatusTool.exe.config
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.SetUploadStatusTool\bin\Debug\C2LP.WebService.SetUploadStatusTool.exe
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.SetUploadStatusTool\bin\Debug\C2LP.WebService.SetUploadStatusTool.pdb
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.SetUploadStatusTool\obj\Debug\C2LP.WebService.SetUploadStatusTool.csprojResolveAssemblyReference.cache
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.SetUploadStatusTool\obj\Debug\C2LP.WebService.SetUploadStatusTool.FrmMain.resources
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.SetUploadStatusTool\obj\Debug\C2LP.WebService.SetUploadStatusTool.Properties.Resources.resources
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.SetUploadStatusTool\obj\Debug\C2LP.WebService.SetUploadStatusTool.csproj.GenerateResource.Cache
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.SetUploadStatusTool\obj\Debug\C2LP.WebService.SetUploadStatusTool.exe
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.SetUploadStatusTool\obj\Debug\C2LP.WebService.SetUploadStatusTool.pdb
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.SetUploadStatusTool\bin\Debug\C2LP.WebService.BLL.dll
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.SetUploadStatusTool\bin\Debug\C2LP.WebService.Utility.dll
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.SetUploadStatusTool\bin\Debug\MySql.Data.dll
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.SetUploadStatusTool\bin\Debug\C2LP.WebService.Model.dll
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.SetUploadStatusTool\bin\Debug\AutoMapper.dll
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.SetUploadStatusTool\bin\Debug\C2LP.WebService.BLL.pdb
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.SetUploadStatusTool\bin\Debug\C2LP.WebService.Utility.pdb
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.SetUploadStatusTool\bin\Debug\C2LP.WebService.Model.pdb

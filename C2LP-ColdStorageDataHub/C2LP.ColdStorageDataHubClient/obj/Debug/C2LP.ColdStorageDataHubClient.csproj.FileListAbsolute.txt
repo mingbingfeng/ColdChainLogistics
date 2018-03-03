@@ -1,0 +1,13 @@
+E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\C2LP.ColdStorageDataHubClient\bin\Debug\C2LP.ColdStorageDataHubClient.exe.config
+E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\C2LP.ColdStorageDataHubClient\bin\Debug\C2LP.ColdStorageDataHubClient.exe
+E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\C2LP.ColdStorageDataHubClient\bin\Debug\C2LP.ColdStorageDataHubClient.pdb
+E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\C2LP.ColdStorageDataHubClient\bin\Debug\TBCC.DBHelp.dll
+E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\C2LP.ColdStorageDataHubClient\bin\Debug\MySql.Data.dll
+E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\C2LP.ColdStorageDataHubClient\bin\Debug\TBCC.DBHelp.pdb
+E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\C2LP.ColdStorageDataHubClient\obj\Debug\C2LP.ColdStorageDataHubClient.csprojResolveAssemblyReference.cache
+E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\C2LP.ColdStorageDataHubClient\obj\Debug\C2LP.ColdStorageDataHubClient.FrmBindPort.resources
+E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\C2LP.ColdStorageDataHubClient\obj\Debug\C2LP.ColdStorageDataHubClient.FrmMain.resources
+E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\C2LP.ColdStorageDataHubClient\obj\Debug\C2LP.ColdStorageDataHubClient.Properties.Resources.resources
+E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\C2LP.ColdStorageDataHubClient\obj\Debug\C2LP.ColdStorageDataHubClient.csproj.GenerateResource.Cache
+E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\C2LP.ColdStorageDataHubClient\obj\Debug\C2LP.ColdStorageDataHubClient.exe
+E:\develop\ColdChainLogistics\C2LP-ColdStorageDataHub\C2LP.ColdStorageDataHubClient\obj\Debug\C2LP.ColdStorageDataHubClient.pdb

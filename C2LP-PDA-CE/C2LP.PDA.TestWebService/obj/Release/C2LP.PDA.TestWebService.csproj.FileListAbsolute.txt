@@ -1,0 +1,8 @@
+E:\develop\ColdChainLogistics\C2LP-PDA-CE\C2LP.PDA.TestWebService\bin\Release\C2LP.PDA.TestWebService.exe
+E:\develop\ColdChainLogistics\C2LP-PDA-CE\C2LP.PDA.TestWebService\bin\Release\C2LP.PDA.TestWebService.pdb
+E:\develop\ColdChainLogistics\C2LP-PDA-CE\C2LP.PDA.TestWebService\obj\Release\ResolveAssemblyReference.cache
+E:\develop\ColdChainLogistics\C2LP-PDA-CE\C2LP.PDA.TestWebService\obj\Release\C2LP.PDA.TestWebService.FrmMain.resources
+E:\develop\ColdChainLogistics\C2LP-PDA-CE\C2LP.PDA.TestWebService\obj\Release\C2LP.PDA.TestWebService.Properties.Resources.resources
+E:\develop\ColdChainLogistics\C2LP-PDA-CE\C2LP.PDA.TestWebService\obj\Release\C2LP.PDA.TestWebService.csproj.GenerateResource.Cache
+E:\develop\ColdChainLogistics\C2LP-PDA-CE\C2LP.PDA.TestWebService\obj\Release\C2LP.PDA.TestWebService.exe
+E:\develop\ColdChainLogistics\C2LP-PDA-CE\C2LP.PDA.TestWebService\obj\Release\C2LP.PDA.TestWebService.pdb

@@ -1,0 +1,39 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.webservice.vtradex.com" > <soapenv:Header/><soapenv:Body><ser:tmsShipmentQianshouXml><?xml version="1.0"?>
+<XML xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MESSAGEHEAD>
+    <SENDER>NBJC01160122</SENDER>
+    <FILETYPE>XML</FILETYPE>
+    <CONTENTTYPE>CarrierArrived</CONTENTTYPE>
+    <SENDTIME>2017-07-28 14:43:20</SENDTIME>
+    <FILENAME>20170728144320</FILENAME>
+    <FILEFUNCTION>ADD</FILEFUNCTION>
+  </MESSAGEHEAD>
+  <MESSAGEDETAIL><![CDATA[<?xml version="1.0"?>
+<XML xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CONTENTLIST>
+    <CONTENT>
+      <HEADER />
+      <DETAILLIST>
+        <DETAIL>
+          <CECNO>HD2485901</CECNO>
+          <LEGCODE>HD2485901</LEGCODE>
+          <SHIPDETAILID>161109060</SHIPDETAILID>
+          <VEHICLENO>浙BH7S21</VEHICLENO>
+          <SIGNPERSON>朱建杭</SIGNPERSON>
+          <SIGNTIME>2017-07-27 09:52:22</SIGNTIME>
+          <JSREASON />
+          <BUSINESSTATUS>20</BUSINESSTATUS>
+          <XTQUNTITY>0</XTQUNTITY>
+          <THQUNTITY>0</THQUNTITY>
+          <HCQUNTITY>0</HCQUNTITY>
+          <PICTURE />
+        </DETAIL>
+      </DETAILLIST>
+    </CONTENT>
+  </CONTENTLIST>
+</XML>]]></MESSAGEDETAIL>
+</XML></ser:tmsShipmentQianshouXml></soapenv:Body></soapenv:Envelope>
+
+-------------------------------------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?><XML><MSGCODE>0</MSGCODE><MSGCONTENT>运单HD2_2485901-1不是在途状态，无法进行签收登记！当前运单状态为:已回单</MSGCONTENT><MSGNAME>20170728144320</MSGNAME></XML>

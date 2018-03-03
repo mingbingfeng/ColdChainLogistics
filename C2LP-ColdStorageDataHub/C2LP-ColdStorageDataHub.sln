@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TBCC.DBHelp", "TBCC.DBHelp\TBCC.DBHelp.csproj", "{21AA4D26-7E0E-41E9-BE20-691FF5BA47D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C2LP.ColdStorageDataHubClient", "C2LP.ColdStorageDataHubClient\C2LP.ColdStorageDataHubClient.csproj", "{B953C03D-6CE7-4E8D-BFB9-1ACC3743913B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21AA4D26-7E0E-41E9-BE20-691FF5BA47D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21AA4D26-7E0E-41E9-BE20-691FF5BA47D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21AA4D26-7E0E-41E9-BE20-691FF5BA47D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21AA4D26-7E0E-41E9-BE20-691FF5BA47D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B953C03D-6CE7-4E8D-BFB9-1ACC3743913B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B953C03D-6CE7-4E8D-BFB9-1ACC3743913B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B953C03D-6CE7-4E8D-BFB9-1ACC3743913B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B953C03D-6CE7-4E8D-BFB9-1ACC3743913B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

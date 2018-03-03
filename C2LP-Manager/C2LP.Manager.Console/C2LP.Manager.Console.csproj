@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5D4819F0-9934-4DE2-844F-CAE4D5CE4710}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>C2LP.Manager.Console</RootNamespace>
+    <AssemblyName>C2LP.Manager.Console</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\MyComm\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Core, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\MyComm\Interop.Microsoft.Office.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=4.1.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MyComm\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ForAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForAbout.Designer.cs">
+      <DependentUpon>ForAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdministrativeDivisionControl\FrmAdministrativeAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdministrativeDivisionControl\FrmAdministrativeAE.Designer.cs">
+      <DependentUpon>FrmAdministrativeAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdministrativeDivisionControl\FrmAdministrativeControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdministrativeDivisionControl\FrmAdministrativeControl.Designer.cs">
+      <DependentUpon>FrmAdministrativeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdministrativeDivisionControl\FrmSeeAdministrative.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdministrativeDivisionControl\FrmSeeAdministrative.Designer.cs">
+      <DependentUpon>FrmSeeAdministrative.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClientControl\FrmAccountsEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientControl\FrmAccountsEdit.Designer.cs">
+      <DependentUpon>FrmAccountsEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClientControl\FrmConsigneeMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientControl\FrmConsigneeMaintenance.Designer.cs">
+      <DependentUpon>FrmConsigneeMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClientControl\FrmConsigneeMaintenanceID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientControl\FrmConsigneeMaintenanceID.Designer.cs">
+      <DependentUpon>FrmConsigneeMaintenanceID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClientControl\FrmConsigneeMaintenanceNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientControl\FrmConsigneeMaintenanceNew.Designer.cs">
+      <DependentUpon>FrmConsigneeMaintenanceNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClientControl\FrmCooperativeClientID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientControl\FrmCooperativeClientID.Designer.cs">
+      <DependentUpon>FrmCooperativeClientID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClientControl\FrmCooperativeClientList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientControl\FrmCooperativeClientList.Designer.cs">
+      <DependentUpon>FrmCooperativeClientList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClientControl\FrmCooperativeClientNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientControl\FrmCooperativeClientNew.Designer.cs">
+      <DependentUpon>FrmCooperativeClientNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClientControl\FrmUsersManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientControl\FrmUsersManage.Designer.cs">
+      <DependentUpon>FrmUsersManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPDAControl\FrmPDADestination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPDAControl\FrmPDADestination.Designer.cs">
+      <DependentUpon>FrmPDADestination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPDAControl\FrmPDAList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPDAControl\FrmPDAList.Designer.cs">
+      <DependentUpon>FrmPDAList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPDAControl\FrmPDAUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPDAControl\FrmPDAUpdate.Designer.cs">
+      <DependentUpon>FrmPDAUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVehicleMountedControl\FrmVehicleMountedList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVehicleMountedControl\FrmVehicleMountedList.Designer.cs">
+      <DependentUpon>FrmVehicleMountedList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVehicleMountedControl\FrmVehicleUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVehicleMountedControl\FrmVehicleUpdate.Designer.cs">
+      <DependentUpon>FrmVehicleUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVehicleMountedControl\FrmVMProbeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVehicleMountedControl\FrmVMProbeEdit.Designer.cs">
+      <DependentUpon>FrmVMProbeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVehicleMountedControl\FrmVMProbeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVehicleMountedControl\FrmVMProbeList.Designer.cs">
+      <DependentUpon>FrmVMProbeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWarehouseControl\ForColdChainData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWarehouseControl\ForColdChainData.Designer.cs">
+      <DependentUpon>ForColdChainData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWarehouseControl\FrmProbeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWarehouseControl\FrmProbeEdit.Designer.cs">
+      <DependentUpon>FrmProbeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWarehouseControl\FrmProbeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWarehouseControl\FrmProbeList.Designer.cs">
+      <DependentUpon>FrmProbeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWarehouseControl\FrmWarehouseBind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWarehouseControl\FrmWarehouseBind.Designer.cs">
+      <DependentUpon>FrmWarehouseBind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWarehouseControl\FrmWarehouseList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWarehouseControl\FrmWarehouseList.Designer.cs">
+      <DependentUpon>FrmWarehouseList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWarehouseControl\FrmWarehouseUpdated.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWarehouseControl\FrmWarehouseUpdated.Designer.cs">
+      <DependentUpon>FrmWarehouseUpdated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWaybillControl\FrmLogisticsNodeSuperView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWaybillControl\FrmLogisticsNodeSuperView.Designer.cs">
+      <DependentUpon>FrmLogisticsNodeSuperView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWaybillControl\FrmSignPicture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWaybillControl\FrmSignPicture.Designer.cs">
+      <DependentUpon>FrmSignPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWaybillControl\FrmThirdParty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWaybillControl\FrmThirdParty.Designer.cs">
+      <DependentUpon>FrmThirdParty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWaybillControl\FrmWaybillHistoryQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWaybillControl\FrmWaybillHistoryQuery.Designer.cs">
+      <DependentUpon>FrmWaybillHistoryQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWaybillControl\FrmWaybillShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWaybillControl\FrmWaybillShow.Designer.cs">
+      <DependentUpon>FrmWaybillShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWaybillControl\FrmWaybillStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWaybillControl\FrmWaybillStatement.Designer.cs">
+      <DependentUpon>FrmWaybillStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Prompt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prompt.Designer.cs">
+      <DependentUpon>Prompt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WinFormPager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WinFormPager.Designer.cs">
+      <DependentUpon>WinFormPager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ConsoleServerWebReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ForAbout.resx">
+      <DependentUpon>ForAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdministrativeDivisionControl\FrmAdministrativeAE.resx">
+      <DependentUpon>FrmAdministrativeAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdministrativeDivisionControl\FrmAdministrativeControl.resx">
+      <DependentUpon>FrmAdministrativeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdministrativeDivisionControl\FrmSeeAdministrative.resx">
+      <DependentUpon>FrmSeeAdministrative.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClientControl\FrmAccountsEdit.resx">
+      <DependentUpon>FrmAccountsEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClientControl\FrmConsigneeMaintenance.resx">
+      <DependentUpon>FrmConsigneeMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClientControl\FrmConsigneeMaintenanceID.resx">
+      <DependentUpon>FrmConsigneeMaintenanceID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClientControl\FrmConsigneeMaintenanceNew.resx">
+      <DependentUpon>FrmConsigneeMaintenanceNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClientControl\FrmCooperativeClientID.resx">
+      <DependentUpon>FrmCooperativeClientID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClientControl\FrmCooperativeClientList.resx">
+      <DependentUpon>FrmCooperativeClientList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClientControl\FrmCooperativeClientNew.resx">
+      <DependentUpon>FrmCooperativeClientNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClientControl\FrmUsersManage.resx">
+      <DependentUpon>FrmUsersManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPDAControl\FrmPDADestination.resx">
+      <DependentUpon>FrmPDADestination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPDAControl\FrmPDAList.resx">
+      <DependentUpon>FrmPDAList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPDAControl\FrmPDAUpdate.resx">
+      <DependentUpon>FrmPDAUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVehicleMountedControl\FrmVehicleMountedList.resx">
+      <DependentUpon>FrmVehicleMountedList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVehicleMountedControl\FrmVehicleUpdate.resx">
+      <DependentUpon>FrmVehicleUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVehicleMountedControl\FrmVMProbeEdit.resx">
+      <DependentUpon>FrmVMProbeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVehicleMountedControl\FrmVMProbeList.resx">
+      <DependentUpon>FrmVMProbeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWarehouseControl\ForColdChainData.resx">
+      <DependentUpon>ForColdChainData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWarehouseControl\FrmProbeEdit.resx">
+      <DependentUpon>FrmProbeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWarehouseControl\FrmProbeList.resx">
+      <DependentUpon>FrmProbeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWarehouseControl\FrmWarehouseBind.resx">
+      <DependentUpon>FrmWarehouseBind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWarehouseControl\FrmWarehouseList.resx">
+      <DependentUpon>FrmWarehouseList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWarehouseControl\FrmWarehouseUpdated.resx">
+      <DependentUpon>FrmWarehouseUpdated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWaybillControl\FrmLogisticsNodeSuperView.resx">
+      <DependentUpon>FrmLogisticsNodeSuperView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWaybillControl\FrmSignPicture.resx">
+      <DependentUpon>FrmSignPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWaybillControl\FrmThirdParty.resx">
+      <DependentUpon>FrmThirdParty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWaybillControl\FrmWaybillHistoryQuery.resx">
+      <DependentUpon>FrmWaybillHistoryQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWaybillControl\FrmWaybillShow.resx">
+      <DependentUpon>FrmWaybillShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWaybillControl\FrmWaybillStatement.resx">
+      <DependentUpon>FrmWaybillStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prompt.resx">
+      <DependentUpon>Prompt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="WinFormPager.resx">
+      <DependentUpon>WinFormPager.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="simhei.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Web References\ConsoleServerWebReference\ConsoleServer.wsdl" />
+    <None Include="Web References\ConsoleServerWebReference\ConsoleServer.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\ConsoleServer0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\ConsoleServer1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\ConsoleServer2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\ConsoleServer3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\ResultModelOfArrayOfArrayOfstringuHEDJ7Dj.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\ResultModelOfArrayOfModel_AiInfod4FqxSXX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\ResultModelOfArrayOfModel_ColdstoragePDAd4FqxSXX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\ResultModelOfArrayOfModel_Customerd4FqxSXX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\ResultModelOfArrayOfModel_CustomerUserd4FqxSXX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\ResultModelOfArrayOfModel_Destinationd4FqxSXX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\ResultModelOfArrayOfModel_Huadong_Tms_Orderd4FqxSXX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\ResultModelOfArrayOfModel_PDAInfod4FqxSXX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\ResultModelOfArrayOfModel_Regiond4FqxSXX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\ResultModelOfArrayOfModel_Waybill_Based4FqxSXX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\ResultModelOfArrayOfModel_Waybill_Noded4FqxSXX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\ResultModelOfArrayOfModel_Waybill_Postback_Picd4FqxSXX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\ResultModelOfboolean.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\ResultModelOfint.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\ResultModelOfModel_AiInfod4FqxSXX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\ResultModelOfModel_ColdStoraged4FqxSXX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\ResultModelOfModel_Customerd4FqxSXX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\ResultModelOfModel_CustomerUserd4FqxSXX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\ResultModelOfModel_Destinationd4FqxSXX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\ResultModelOfModel_PDAInfod4FqxSXX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsoleServerWebReference\ResultModelOfModel_Storage_Deviced4FqxSXX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://127.0.0.1:8003/ConsoleServer">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ConsoleServerWebReference\</RelPath>
+      <UpdateFromURL>http://127.0.0.1:8003/ConsoleServer</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>C2LP_Manager_Console_ConsoleServerWebReference_ConsoleServer</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\ConsoleServerWebReference\ConsoleServer.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\loading.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

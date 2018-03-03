@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ConsoleServer" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://127.0.0.1:8003/ConsoleServer?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://127.0.0.1:8003/ConsoleServer?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://127.0.0.1:8003/ConsoleServer?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" />
+      <xsd:import schemaLocation="http://127.0.0.1:8003/ConsoleServer?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model.MyEnum" />
+      <xsd:import schemaLocation="http://127.0.0.1:8003/ConsoleServer?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IConsoleInterface_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetCustomerList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerList" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetCustomerList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetCustomerListByRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerListByRole" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetCustomerListByRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerListByRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetCustomerListByRoleCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerListByRoleCount" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetCustomerListByRoleCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerListByRoleCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_EditCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_EditCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetCustomerUserList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerUserList" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetCustomerUserList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerUserListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_EditCustomerUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditCustomerUser" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_EditCustomerUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditCustomerUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetWaybillList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWaybillList" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetWaybillList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWaybillListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetWaybillListCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWaybillListCount" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetWaybillListCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWaybillListCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetWaybillNodeList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWaybillNodeList" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetWaybillNodeList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWaybillNodeListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetWaybillNodeHistDataList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWaybillNodeHistDataList" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetWaybillNodeHistDataList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWaybillNodeHistDataListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetWaybillNodeHistDataCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWaybillNodeHistDataCount" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetWaybillNodeHistDataCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWaybillNodeHistDataCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetWaybillPostbackPic_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWaybillPostbackPic" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetWaybillPostbackPic_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWaybillPostbackPicResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetPDAList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPDAList" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetPDAList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPDAListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_EditPDA_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditPDA" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_EditPDA_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditPDAResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetColdstoragePDAList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetColdstoragePDAList" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetColdstoragePDAList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetColdstoragePDAListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_EditColdstorage_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditColdstorage" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_EditColdstorage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditColdstorageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetAiInfoByStorageId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAiInfoByStorageId" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetAiInfoByStorageId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAiInfoByStorageIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_EditAiInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditAiInfo" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_EditAiInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditAiInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetRegionInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegionInfo" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetRegionInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegionInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetDefaultDevice_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDefaultDevice" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetDefaultDevice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDefaultDeviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetPDADestinationList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPDADestinationList" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetPDADestinationList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPDADestinationListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_EditPDADestination_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditPDADestination" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_EditPDADestination_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditPDADestinationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetHuadongQuery_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHuadongQuery" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetHuadongQuery_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHuadongQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GethuadongTmsOrderCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GethuadongTmsOrderCount" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GethuadongTmsOrderCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GethuadongTmsOrderCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetVagueQuery_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVagueQuery" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetVagueQuery_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVagueQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetVagueQueryCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVagueQueryCount" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetVagueQueryCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVagueQueryCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetCustomerCounty_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerCounty" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetCustomerCounty_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerCountyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetCustomerListByCounty_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerListByCounty" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetCustomerListByCounty_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerListByCountyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetCustomerListByCountyCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerListByCountyCount" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetCustomerListByCountyCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerListByCountyCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetConsigneeCounty_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConsigneeCounty" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetConsigneeCounty_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConsigneeCountyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetConsigneeCountyCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConsigneeCountyCount" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetConsigneeCountyCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConsigneeCountyCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetCustomerUpdateTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerUpdateTime" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetCustomerUpdateTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerUpdateTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_UpdateCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_UpdateCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetRegionDateTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegionDateTime" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetRegionDateTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegionDateTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_RegionEdit_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegionEdit" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_RegionEdit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegionEditResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetHuadongWaybillNumberQuery_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHuadongWaybillNumberQuery" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetHuadongWaybillNumberQuery_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHuadongWaybillNumberQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GethuadongWaybillNumberCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GethuadongWaybillNumberCount" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GethuadongWaybillNumberCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GethuadongWaybillNumberCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetHuadongWaybillVagueQuery_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHuadongWaybillVagueQuery" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetHuadongWaybillVagueQuery_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHuadongWaybillVagueQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GethuadongWaybillVagueCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GethuadongWaybillVagueCount" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GethuadongWaybillVagueCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GethuadongWaybillVagueCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetWaybillThirdPartyList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWaybillThirdPartyList" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetWaybillThirdPartyList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWaybillThirdPartyListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetWaybillThirdPartyListCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWaybillThirdPartyListCount" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetWaybillThirdPartyListCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWaybillThirdPartyListCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetWaybillThirdPartyVagueList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWaybillThirdPartyVagueList" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetWaybillThirdPartyVagueList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWaybillThirdPartyVagueListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetWaybillThirdPartyListVagueCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWaybillThirdPartyListVagueCount" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetWaybillThirdPartyListVagueCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWaybillThirdPartyListVagueCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetZoneOptions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetZoneOptions" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetZoneOptions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetZoneOptionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetCity_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCity" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetCity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetDownstreamQZList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDownstreamQZList" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetDownstreamQZList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDownstreamQZListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetQueryClientsList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetQueryClientsList" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetQueryClientsList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetQueryClientsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetQueryClientsListCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetQueryClientsListCount" />
+  </wsdl:message>
+  <wsdl:message name="IConsoleInterface_GetQueryClientsListCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetQueryClientsListCountResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IConsoleInterface">
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/Login" message="tns:IConsoleInterface_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/LoginResponse" message="tns:IConsoleInterface_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetCustomerList" message="tns:IConsoleInterface_GetCustomerList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetCustomerListResponse" message="tns:IConsoleInterface_GetCustomerList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerListByRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetCustomerListByRole" message="tns:IConsoleInterface_GetCustomerListByRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetCustomerListByRoleResponse" message="tns:IConsoleInterface_GetCustomerListByRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerListByRoleCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetCustomerListByRoleCount" message="tns:IConsoleInterface_GetCustomerListByRoleCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetCustomerListByRoleCountResponse" message="tns:IConsoleInterface_GetCustomerListByRoleCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/EditCustomer" message="tns:IConsoleInterface_EditCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/EditCustomerResponse" message="tns:IConsoleInterface_EditCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerUserList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetCustomerUserList" message="tns:IConsoleInterface_GetCustomerUserList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetCustomerUserListResponse" message="tns:IConsoleInterface_GetCustomerUserList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditCustomerUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/EditCustomerUser" message="tns:IConsoleInterface_EditCustomerUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/EditCustomerUserResponse" message="tns:IConsoleInterface_EditCustomerUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWaybillList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetWaybillList" message="tns:IConsoleInterface_GetWaybillList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetWaybillListResponse" message="tns:IConsoleInterface_GetWaybillList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWaybillListCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetWaybillListCount" message="tns:IConsoleInterface_GetWaybillListCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetWaybillListCountResponse" message="tns:IConsoleInterface_GetWaybillListCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWaybillNodeList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetWaybillNodeList" message="tns:IConsoleInterface_GetWaybillNodeList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetWaybillNodeListResponse" message="tns:IConsoleInterface_GetWaybillNodeList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWaybillNodeHistDataList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetWaybillNodeHistDataList" message="tns:IConsoleInterface_GetWaybillNodeHistDataList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetWaybillNodeHistDataListResponse" message="tns:IConsoleInterface_GetWaybillNodeHistDataList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWaybillNodeHistDataCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetWaybillNodeHistDataCount" message="tns:IConsoleInterface_GetWaybillNodeHistDataCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetWaybillNodeHistDataCountResponse" message="tns:IConsoleInterface_GetWaybillNodeHistDataCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWaybillPostbackPic">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetWaybillPostbackPic" message="tns:IConsoleInterface_GetWaybillPostbackPic_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetWaybillPostbackPicResponse" message="tns:IConsoleInterface_GetWaybillPostbackPic_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPDAList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetPDAList" message="tns:IConsoleInterface_GetPDAList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetPDAListResponse" message="tns:IConsoleInterface_GetPDAList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditPDA">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/EditPDA" message="tns:IConsoleInterface_EditPDA_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/EditPDAResponse" message="tns:IConsoleInterface_EditPDA_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetColdstoragePDAList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetColdstoragePDAList" message="tns:IConsoleInterface_GetColdstoragePDAList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetColdstoragePDAListResponse" message="tns:IConsoleInterface_GetColdstoragePDAList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditColdstorage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/EditColdstorage" message="tns:IConsoleInterface_EditColdstorage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/EditColdstorageResponse" message="tns:IConsoleInterface_EditColdstorage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAiInfoByStorageId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetAiInfoByStorageId" message="tns:IConsoleInterface_GetAiInfoByStorageId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetAiInfoByStorageIdResponse" message="tns:IConsoleInterface_GetAiInfoByStorageId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditAiInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/EditAiInfo" message="tns:IConsoleInterface_EditAiInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/EditAiInfoResponse" message="tns:IConsoleInterface_EditAiInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRegionInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetRegionInfo" message="tns:IConsoleInterface_GetRegionInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetRegionInfoResponse" message="tns:IConsoleInterface_GetRegionInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultDevice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetDefaultDevice" message="tns:IConsoleInterface_GetDefaultDevice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetDefaultDeviceResponse" message="tns:IConsoleInterface_GetDefaultDevice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPDADestinationList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetPDADestinationList" message="tns:IConsoleInterface_GetPDADestinationList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetPDADestinationListResponse" message="tns:IConsoleInterface_GetPDADestinationList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditPDADestination">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/EditPDADestination" message="tns:IConsoleInterface_EditPDADestination_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/EditPDADestinationResponse" message="tns:IConsoleInterface_EditPDADestination_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHuadongQuery">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetHuadongQuery" message="tns:IConsoleInterface_GetHuadongQuery_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetHuadongQueryResponse" message="tns:IConsoleInterface_GetHuadongQuery_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GethuadongTmsOrderCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GethuadongTmsOrderCount" message="tns:IConsoleInterface_GethuadongTmsOrderCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GethuadongTmsOrderCountResponse" message="tns:IConsoleInterface_GethuadongTmsOrderCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVagueQuery">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetVagueQuery" message="tns:IConsoleInterface_GetVagueQuery_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetVagueQueryResponse" message="tns:IConsoleInterface_GetVagueQuery_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVagueQueryCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetVagueQueryCount" message="tns:IConsoleInterface_GetVagueQueryCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetVagueQueryCountResponse" message="tns:IConsoleInterface_GetVagueQueryCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerCounty">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetCustomerCounty" message="tns:IConsoleInterface_GetCustomerCounty_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetCustomerCountyResponse" message="tns:IConsoleInterface_GetCustomerCounty_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerListByCounty">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetCustomerListByCounty" message="tns:IConsoleInterface_GetCustomerListByCounty_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetCustomerListByCountyResponse" message="tns:IConsoleInterface_GetCustomerListByCounty_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerListByCountyCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetCustomerListByCountyCount" message="tns:IConsoleInterface_GetCustomerListByCountyCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetCustomerListByCountyCountResponse" message="tns:IConsoleInterface_GetCustomerListByCountyCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConsigneeCounty">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetConsigneeCounty" message="tns:IConsoleInterface_GetConsigneeCounty_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetConsigneeCountyResponse" message="tns:IConsoleInterface_GetConsigneeCounty_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConsigneeCountyCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetConsigneeCountyCount" message="tns:IConsoleInterface_GetConsigneeCountyCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetConsigneeCountyCountResponse" message="tns:IConsoleInterface_GetConsigneeCountyCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerUpdateTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetCustomerUpdateTime" message="tns:IConsoleInterface_GetCustomerUpdateTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetCustomerUpdateTimeResponse" message="tns:IConsoleInterface_GetCustomerUpdateTime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/UpdateCustomer" message="tns:IConsoleInterface_UpdateCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/UpdateCustomerResponse" message="tns:IConsoleInterface_UpdateCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRegionDateTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetRegionDateTime" message="tns:IConsoleInterface_GetRegionDateTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetRegionDateTimeResponse" message="tns:IConsoleInterface_GetRegionDateTime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegionEdit">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/RegionEdit" message="tns:IConsoleInterface_RegionEdit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/RegionEditResponse" message="tns:IConsoleInterface_RegionEdit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHuadongWaybillNumberQuery">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetHuadongWaybillNumberQuery" message="tns:IConsoleInterface_GetHuadongWaybillNumberQuery_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetHuadongWaybillNumberQueryResponse" message="tns:IConsoleInterface_GetHuadongWaybillNumberQuery_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GethuadongWaybillNumberCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GethuadongWaybillNumberCount" message="tns:IConsoleInterface_GethuadongWaybillNumberCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GethuadongWaybillNumberCountResponse" message="tns:IConsoleInterface_GethuadongWaybillNumberCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHuadongWaybillVagueQuery">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetHuadongWaybillVagueQuery" message="tns:IConsoleInterface_GetHuadongWaybillVagueQuery_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetHuadongWaybillVagueQueryResponse" message="tns:IConsoleInterface_GetHuadongWaybillVagueQuery_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GethuadongWaybillVagueCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GethuadongWaybillVagueCount" message="tns:IConsoleInterface_GethuadongWaybillVagueCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GethuadongWaybillVagueCountResponse" message="tns:IConsoleInterface_GethuadongWaybillVagueCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWaybillThirdPartyList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetWaybillThirdPartyList" message="tns:IConsoleInterface_GetWaybillThirdPartyList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetWaybillThirdPartyListResponse" message="tns:IConsoleInterface_GetWaybillThirdPartyList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWaybillThirdPartyListCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetWaybillThirdPartyListCount" message="tns:IConsoleInterface_GetWaybillThirdPartyListCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetWaybillThirdPartyListCountResponse" message="tns:IConsoleInterface_GetWaybillThirdPartyListCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWaybillThirdPartyVagueList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetWaybillThirdPartyVagueList" message="tns:IConsoleInterface_GetWaybillThirdPartyVagueList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetWaybillThirdPartyVagueListResponse" message="tns:IConsoleInterface_GetWaybillThirdPartyVagueList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWaybillThirdPartyListVagueCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetWaybillThirdPartyListVagueCount" message="tns:IConsoleInterface_GetWaybillThirdPartyListVagueCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetWaybillThirdPartyListVagueCountResponse" message="tns:IConsoleInterface_GetWaybillThirdPartyListVagueCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetZoneOptions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetZoneOptions" message="tns:IConsoleInterface_GetZoneOptions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetZoneOptionsResponse" message="tns:IConsoleInterface_GetZoneOptions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetCity" message="tns:IConsoleInterface_GetCity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetCityResponse" message="tns:IConsoleInterface_GetCity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDownstreamQZList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetDownstreamQZList" message="tns:IConsoleInterface_GetDownstreamQZList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetDownstreamQZListResponse" message="tns:IConsoleInterface_GetDownstreamQZList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQueryClientsList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetQueryClientsList" message="tns:IConsoleInterface_GetQueryClientsList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetQueryClientsListResponse" message="tns:IConsoleInterface_GetQueryClientsList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQueryClientsListCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsoleInterface/GetQueryClientsListCount" message="tns:IConsoleInterface_GetQueryClientsListCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsoleInterface/GetQueryClientsListCountResponse" message="tns:IConsoleInterface_GetQueryClientsListCount_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IConsoleInterface" type="tns:IConsoleInterface">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerList">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetCustomerList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerListByRole">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetCustomerListByRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerListByRoleCount">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetCustomerListByRoleCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditCustomer">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/EditCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerUserList">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetCustomerUserList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditCustomerUser">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/EditCustomerUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWaybillList">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetWaybillList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWaybillListCount">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetWaybillListCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWaybillNodeList">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetWaybillNodeList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWaybillNodeHistDataList">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetWaybillNodeHistDataList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWaybillNodeHistDataCount">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetWaybillNodeHistDataCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWaybillPostbackPic">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetWaybillPostbackPic" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPDAList">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetPDAList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditPDA">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/EditPDA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetColdstoragePDAList">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetColdstoragePDAList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditColdstorage">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/EditColdstorage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAiInfoByStorageId">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetAiInfoByStorageId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditAiInfo">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/EditAiInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegionInfo">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetRegionInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultDevice">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetDefaultDevice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPDADestinationList">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetPDADestinationList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditPDADestination">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/EditPDADestination" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHuadongQuery">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetHuadongQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GethuadongTmsOrderCount">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GethuadongTmsOrderCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVagueQuery">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetVagueQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVagueQueryCount">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetVagueQueryCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerCounty">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetCustomerCounty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerListByCounty">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetCustomerListByCounty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerListByCountyCount">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetCustomerListByCountyCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConsigneeCounty">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetConsigneeCounty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConsigneeCountyCount">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetConsigneeCountyCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerUpdateTime">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetCustomerUpdateTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomer">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/UpdateCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegionDateTime">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetRegionDateTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegionEdit">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/RegionEdit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHuadongWaybillNumberQuery">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetHuadongWaybillNumberQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GethuadongWaybillNumberCount">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GethuadongWaybillNumberCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHuadongWaybillVagueQuery">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetHuadongWaybillVagueQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GethuadongWaybillVagueCount">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GethuadongWaybillVagueCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWaybillThirdPartyList">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetWaybillThirdPartyList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWaybillThirdPartyListCount">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetWaybillThirdPartyListCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWaybillThirdPartyVagueList">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetWaybillThirdPartyVagueList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWaybillThirdPartyListVagueCount">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetWaybillThirdPartyListVagueCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetZoneOptions">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetZoneOptions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCity">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetCity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDownstreamQZList">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetDownstreamQZList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQueryClientsList">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetQueryClientsList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQueryClientsListCount">
+      <soap:operation soapAction="http://tempuri.org/IConsoleInterface/GetQueryClientsListCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ConsoleServer">
+    <wsdl:port name="BasicHttpBinding_IConsoleInterface" binding="tns:BasicHttpBinding_IConsoleInterface">
+      <soap:address location="http://127.0.0.1:8003/ConsoleServer/ws" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

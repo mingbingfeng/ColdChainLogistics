@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.0.153:84/ColdChainServer?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" />
+  <xs:element name="UploadRefHistDatas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="refHDList" nillable="true" type="q1:ArrayOfModel_NodeHistoryData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadRefHistDatasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="UploadRefHistDatasResult" nillable="true" type="q2:ResultModelOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadCarHistDatas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="carHDList" nillable="true" type="q3:ArrayOfModel_NodeHistoryData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadCarHistDatasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/C2LP.WebService.Model" minOccurs="0" name="UploadCarHistDatasResult" nillable="true" type="q4:ResultModelOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

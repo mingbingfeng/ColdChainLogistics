@@ -1,0 +1,47 @@
+2017-07-31 09:19:07:--------------------------------------------------------------
+2017-07-31 09:19:07:上报第三方运单HD456456,customerId:669
+2017-07-31 09:19:07:进入创建第三方运单逻辑HD456456,操作时间2017-07-28 10:37:00
+2017-07-31 09:19:07:select * from waybill_base where number in (select number from huadong_tmsorder_waybillbase where relationId = 'HD456456') and number<>'' and number is not null
+2017-07-31 09:19:07:CheckThirdPartyNumberExist:0
+2017-07-31 09:19:07:拼接后的运单号：9910HD456456
+2017-07-31 09:19:08:更新第三方运单relationId：update huadong_tms_order set relationId='HD456456' where (SHIPDETAILID = 'HD456456' or LEGCODE = 'HD456456' ) and customerId = 669,结果：0
+2017-07-31 09:19:08:第三方运单不存在时，先插入一条空信息的运单，待第三方运单同步回来时更新运单信息
+2017-07-31 09:19:08:开始添加关联运单
+2017-07-31 09:19:08:INSERT INTO `coldchain_logistics_db`.`huadong_tms_order` ( `relationId`, `code`, `SRCEXPNO`, `ROADID`, `SHIPDETAILID`, `TOTALID`, `LEGCODE`, `SHIPMENTCODE`, `CONSIGNORCODE`, `CONSIGNORNAME`, `DEPTNO`, `DEPTNAME`, `CUSTOMERCODE`, `CUSTOMERNAME`, `AREAHOUSE`, `SALESMAN`, `TRANSMODEID`, `ERPTRANSMODENAME`, `OPERATIONTYPE`, `DEMANDARRIVETIME`, `TRANSPORTTYPE`, `ORDERINSTANCY`, `TRANSPORTCATEGORY`, `ROUTENO`, `TRANSDEADLINE`, `FROMGTRANSID`, `FROMGTRANSNAME`, `TOGTRANSID`, `TOGTRANSNAME`, `RECEIVEADDR`, `RECEIVEMAN`, `RECEIVEPHONE`, `CREDATE`, `INOUTFLAG`, `WMSROUTEWAVENO`, `PRINTTYPE`, `TOTALQUNTITY`, `WHOLEQUNTITY`, `PARTQUNTITY`, `JFQUNTITY`, `DESCRIPTION`, `EXTCOL0`, `EXTCOL1`, `EXTCOL2`, `EXTCOL3`, `EXTCOL4`, `EXTCOL5`, `EXTCOL6`, `EXTCOL7`, `EXTCOL8`, `EXTCOL9`, `EXTCOL10`, `EXTCOL11`, `EXTCOL12`, `EXTCOL13`, `EXTCOL14`, `EXTCOL15`, `EXTCOL16`, `EXTCOL17`, `EXTCOL18`, `EXTCOL19`, `senderOrg`, `senderPerson`, `senderTel`, `senderAddress`, `receiverOrg`, `receiverPerson`, `receiverTel`, `receiverAddress`, `SecretKey`, `CreateTime`, `customerId`) VALUES ( 'HD456456', '', '', '', 'HD456456', '', 'HD456456', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0,0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '未知', '2017-07-28 10:37:00', '669');
+2017-07-31 09:19:08:insert into huadong_tmsorder_waybillbase(relationId,number,customerId) values('HD456456', '9910HD456456',669)
+2017-07-31 09:19:08:insert into waybill_base (number,senderId,senderOrg,senderPerson,senderTel,senderAddress,receiverId,receiverOrg,receiverPerson, receiverTel, receiverAddress, billingCount, stage, beginAt, signinAt, picPostbackAt, company) select '9910HD456456' as number, 669 as senderId, '华东医药供应链管理（杭州）有限公司' as senderOrg, EXTCOL12 as senderPerson, '' as senderTel, EXTCOL11 as senderAddress,null as receiverId, CUSTOMERNAME as receiverOrg, RECEIVEMAN as receiverPerson, RECEIVEPHONE as receiverTel, RECEIVEADDR as receiverAddress,0 as billingCount, 0 as stage, '2017-07-28 10:37:00' as beginAt, null as signinAt, null as picPostbackAt, 1 as company from huadong_tms_order where SHIPDETAILID = 'HD456456' or LEGCODE = 'HD456456' limit 1
+2017-07-31 09:19:10:执行结果：1
+2017-07-31 09:19:10:开始删除临时表超过一个月的信息
+2017-07-31 09:19:10:查询关系表是否存在信息select * from huadong_tmsorder_waybillbase where relationId='HD456456';
+2017-07-31 09:19:10:查询运单信息是否存在select * from waybill_base where number='9910HD456456';  
+2017-07-31 09:19:10:查询暂存表是否存在节点信息select * from unnecessary_node where baseId='HD456456' and operateAt>='2017-07-28 10:37:00';
+2017-07-31 09:19:10:暂存表不存在节点信息
+2017-07-31 09:19:10:开始删除临时图片表超过一个月的信息
+2017-07-31 09:19:10:图片表不存在图片信息,sql:select * from temporarypictures where baseId='HD456456' and operateAt>='2017-07-28 10:37:00';,结果:0
+2017-07-31 09:19:10:创建第三方运单逻辑结束
+2017-07-31 09:19:10:退出运单逻辑
+2017-07-31 09:19:10:--------------------------------------------------------------
+2017-07-31 09:19:15:--------------------------------------------------------------
+2017-07-31 09:19:15:上报第三方运单节点HD456456,customerId:669,parentStorageId
+2017-07-31 09:19:15:进入创建运单节点逻辑HD456456,操作时间2017/7/28 星期五 上午 10:37:00
+2017-07-31 09:19:15:0
+2017-07-31 09:19:15:第三方运单需要查询关系表获取转换后的运单号select number from huadong_tmsorder_waybillbase where relationid='HD456456' and customerId=669,结果：9910HD456456
+2017-07-31 09:19:15:查询运单是否存在:select * from waybill_base where number = '9910HD456456' order by id desc limit 1
+2017-07-31 09:19:15:当前运单存在,开始添加节点
+2017-07-31 09:19:15:查询该运单已有的所有节点:select id, convert(baseId, CHAR) as baseId ,operateAt,storageId,storageName,content,arrived from waybill_node where baseId = 6166,查询到的节点条数：0
+2017-07-31 09:19:15:添加节点:insert into waybill_node (baseId,operateAt,storageId,storageName,content,arrived,parentStorageId,handleFlag,scanNumber,CustomerId) values ('6166', '2017-07-28 10:37:00', '108', '浙BH7S21', '【浙BH7S21】 配送员【朱建杭】已收取快件 准备运往【丽水】', '1','0','0','HD456456','669');
+2017-07-31 09:19:16:添加结果：True
+2017-07-31 09:19:16:退出节点逻辑
+2017-07-31 09:19:16:--------------------------------------------------------------
+2017-07-31 09:19:25:--------------------------------------------------------------
+2017-07-31 09:19:25:上报第三方运单节点HD456456,customerId:669,parentStorageId
+2017-07-31 09:19:25:进入创建运单节点逻辑HD456456,操作时间2017/7/28 星期五 上午 10:40:06
+2017-07-31 09:19:25:108
+2017-07-31 09:19:25:第三方运单需要查询关系表获取转换后的运单号select number from huadong_tmsorder_waybillbase where relationid='HD456456' and customerId=669,结果：9910HD456456
+2017-07-31 09:19:25:查询运单是否存在:select * from waybill_base where number = '9910HD456456' order by id desc limit 1
+2017-07-31 09:19:25:当前运单存在,开始添加节点
+2017-07-31 09:19:25:查询该运单已有的所有节点:select id, convert(baseId, CHAR) as baseId ,operateAt,storageId,storageName,content,arrived from waybill_node where baseId = 6166,查询到的节点条数：1
+2017-07-31 09:19:25:添加节点:insert into waybill_node (baseId,operateAt,storageId,storageName,content,arrived,parentStorageId,handleFlag,scanNumber,CustomerId) values ('6166', '2017-07-28 10:40:06', '101', '浙B287R6', '【浙B287R6】 配送员已出发 准备运往【丽水】', '1','108','0','HD456456','669');
+2017-07-31 09:19:25:添加结果：True
+2017-07-31 09:19:25:退出节点逻辑
+2017-07-31 09:19:25:--------------------------------------------------------------

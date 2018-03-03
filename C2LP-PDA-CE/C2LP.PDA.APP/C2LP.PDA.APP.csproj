@@ -1,0 +1,322 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9252FD09-17C7-4BFB-AA6A-C9A35978D5A6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>C2LP.PDA.APP</RootNamespace>
+    <AssemblyName>C2LP.PDA.APP</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.00</OSVersion>
+    <DeployDirSuffix>C2LP.PDA.APP</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <SignAssembly>true</SignAssembly>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WindowsCE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsCE.Forms" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common.cs" />
+    <Compile Include="ConnectHelp.cs" />
+    <Compile Include="FrmParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmParent.Designer.cs">
+      <DependentUpon>FrmParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FullScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderInput\UCCustomerInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrderInput\UCCustomerInfo.Designer.cs">
+      <DependentUpon>UCCustomerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmParent.resx">
+      <DependentUpon>FrmParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCMain.resx">
+      <DependentUpon>UCMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCNodeScan.resx">
+      <DependentUpon>UCNodeScan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCOrderInput.resx">
+      <DependentUpon>UCOrderInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSetDestin.resx">
+      <DependentUpon>UCSetDestin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSetNumber.resx">
+      <DependentUpon>UCSetNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSetStorage.resx">
+      <DependentUpon>UCSetStorage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSyncAll.resx">
+      <DependentUpon>UCSyncAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCUploadConfig.resx">
+      <DependentUpon>UCUploadConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ScannerAPI\USI_API_HT380W.cs" />
+    <Compile Include="SyncHelp.cs" />
+    <Compile Include="SystemDll.cs" />
+    <Compile Include="UCConnect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCConnect.Designer.cs">
+      <DependentUpon>UCConnect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCMain.Designer.cs">
+      <DependentUpon>UCMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCNode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCNode.Designer.cs">
+      <DependentUpon>UCNode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCNodeList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCNodeList.Designer.cs">
+      <DependentUpon>UCNodeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCNodeScan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCNodeScan.Designer.cs">
+      <DependentUpon>UCNodeScan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCOrderInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCOrderInput.Designer.cs">
+      <DependentUpon>UCOrderInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSetDestin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSetDestin.Designer.cs">
+      <DependentUpon>UCSetDestin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSetNumber.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSetNumber.Designer.cs">
+      <DependentUpon>UCSetNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSetStorage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSetStorage.Designer.cs">
+      <DependentUpon>UCSetStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSyncAll.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSyncAll.Designer.cs">
+      <DependentUpon>UCSyncAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCThirdParty.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCThirdParty.Designer.cs">
+      <DependentUpon>UCThirdParty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCUploadConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCUploadConfig.Designer.cs">
+      <DependentUpon>UCUploadConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UploadHelp.cs" />
+    <Compile Include="Web References\PDAWebReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\C2LP.PDA.Datas\C2LP.PDA.Datas.csproj">
+      <Project>{FF7B31FB-F913-4BF0-AC0D-FDADD4B358B6}</Project>
+      <Name>C2LP.PDA.Datas</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CameraDemo.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CE380.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CE380_CDMA2000.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CE380_GPRS.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CE380_GPS.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CE380_WCDMA.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="gprs.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SQLite.Interop.102.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <COMRegister>true</COMRegister>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\PDAWebReference\PDAServer.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://192.168.0.150:8002/PDAServer">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\PDAWebReference\</RelPath>
+      <UpdateFromURL>http://192.168.0.150:8002/PDAServer</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="datas.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderInput\UCCustomerInfo.resx">
+      <DependentUpon>UCCustomerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCConnect.resx">
+      <DependentUpon>UCConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCNode.resx">
+      <DependentUpon>UCNode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCNodeList.resx">
+      <DependentUpon>UCNodeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCThirdParty.resx">
+      <DependentUpon>UCThirdParty.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\C2LP.PDA.Datas.Model.MyRegion.datasource" />
+    <None Include="Web References\PDAWebReference\PDAServer.wsdl" />
+    <None Include="Web References\PDAWebReference\PDAServer.xsd" />
+    <None Include="Web References\PDAWebReference\PDAServer0.xsd" />
+    <None Include="Web References\PDAWebReference\PDAServer1.xsd" />
+    <None Include="Web References\PDAWebReference\PDAServer2.xsd" />
+    <None Include="Web References\PDAWebReference\PDAServer3.xsd" />
+    <None Include="Web References\PDAWebReference\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\PDAWebReference\ResultModelOfArrayOfModel_ColdStoraged4FqxSXX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PDAWebReference\ResultModelOfArrayOfModel_Customerd4FqxSXX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PDAWebReference\ResultModelOfArrayOfPDA_Model_Regiond4FqxSXX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PDAWebReference\ResultModelOfArrayOfstringuHEDJ7Dj.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PDAWebReference\ResultModelOfboolean.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PDAWebReference\ResultModelOfdateTime.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PDAWebReference\ResultModelOfModel_PDAInfod4FqxSXX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

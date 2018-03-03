@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3A769729-0189-4BE8-B6F5-E864883A4A58}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>C2LP.WebService.Console</RootNamespace>
+    <AssemblyName>C2LP.WebService.Console</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\C2LP.WebService.BLL\C2LP.WebService.BLL.csproj">
+      <Project>{01da7f62-ab27-40ba-a43a-240ce8d70583}</Project>
+      <Name>C2LP.WebService.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\C2LP.WebService.DataHandle\C2LP.WebService.DataHandle.csproj">
+      <Project>{48dcb569-f994-40af-b23c-8ef532f444fd}</Project>
+      <Name>C2LP.WebService.DataHandle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\C2LP.WebService.HandleServer\C2LP.WebService.HandleServer.csproj">
+      <Project>{d7da05e2-c0f2-46be-8075-993fe0aca562}</Project>
+      <Name>C2LP.WebService.HandleServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\C2LP.WebService.Model\C2LP.WebService.Model.csproj">
+      <Project>{b86a18fe-83b5-46f9-91f0-665f2d054f14}</Project>
+      <Name>C2LP.WebService.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\C2LP.WebService.Utility\C2LP.WebService.Utility.csproj">
+      <Project>{9AFFEB49-C938-40EA-882A-F36C31306982}</Project>
+      <Name>C2LP.WebService.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<M_TMSNode xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OrderNo>1109039</OrderNo>
+  <JcOrderNo>991000000631</JcOrderNo>
+  <JcNodeId>11063</JcNodeId>
+  <TrackTime>2017-03-30T09:56:20</TrackTime>
+  <TrackPerson>吴华明</TrackPerson>
+  <TrackInfo>【浙A046JC】 运抵卸车</TrackInfo>
+  <TrackType>18</TrackType>
+  <StorageName>浙A046JC</StorageName>
+  <Arrived>2</Arrived>
+</M_TMSNode>
+
+-------------------------------------------------------------------------
+

@@ -1,0 +1,5 @@
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.Model\bin\Debug\C2LP.WebService.Model.dll
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.Model\bin\Debug\C2LP.WebService.Model.pdb
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.Model\obj\Debug\C2LP.WebService.Model.dll
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.Model\obj\Debug\C2LP.WebService.Model.pdb
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.Model\obj\Debug\C2LP.WebService.Model.csprojResolveAssemblyReference.cache

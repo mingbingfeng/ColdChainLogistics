@@ -1,0 +1,17 @@
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.HandleServer\bin\Debug\C2LP.WebService.HandleServer.dll
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.HandleServer\bin\Debug\C2LP.WebService.HandleServer.pdb
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.HandleServer\bin\Debug\C2LP.WebService.Interface.dll
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.HandleServer\bin\Debug\C2LP.WebService.Model.dll
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.HandleServer\bin\Debug\C2LP.WebService.Interface.pdb
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.HandleServer\bin\Debug\C2LP.WebService.Model.pdb
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.HandleServer\obj\Debug\C2LP.WebService.HandleServer.csprojResolveAssemblyReference.cache
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.HandleServer\obj\Debug\C2LP.WebService.HandleServer.dll
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.HandleServer\obj\Debug\C2LP.WebService.HandleServer.pdb
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.HandleServer\bin\Debug\C2LP.WebService.BLL.dll
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.HandleServer\bin\Debug\C2LP.WebService.Utility.dll
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.HandleServer\bin\Debug\MySql.Data.dll
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.HandleServer\bin\Debug\AutoMapper.dll
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.HandleServer\bin\Debug\C2LP.WebService.BLL.pdb
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.HandleServer\bin\Debug\C2LP.WebService.Utility.pdb
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.HandleServer\bin\Debug\C2LP.WebService.DataHandle.dll
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.HandleServer\bin\Debug\C2LP.WebService.DataHandle.pdb

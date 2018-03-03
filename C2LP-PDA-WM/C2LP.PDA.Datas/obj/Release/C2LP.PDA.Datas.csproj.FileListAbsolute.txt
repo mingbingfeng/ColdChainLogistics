@@ -1,0 +1,12 @@
+E:\develop\ColdChainLogistics\C2LP-PDA\C2LP.PDA.Datas\bin\Release\C2LP.PDA.Datas.dll
+E:\develop\ColdChainLogistics\C2LP-PDA\C2LP.PDA.Datas\bin\Release\C2LP.PDA.Datas.pdb
+E:\develop\ColdChainLogistics\C2LP-PDA\C2LP.PDA.Datas\bin\Release\System.Data.SQLite.dll
+E:\develop\ColdChainLogistics\C2LP-PDA\C2LP.PDA.Datas\obj\Release\ResolveAssemblyReference.cache
+E:\develop\ColdChainLogistics\C2LP-PDA\C2LP.PDA.Datas\obj\Release\C2LP.PDA.Datas.dll
+E:\develop\ColdChainLogistics\C2LP-PDA\C2LP.PDA.Datas\obj\Release\C2LP.PDA.Datas.pdb
+E:\develop\ColdChainLogistics\C2LP-PDA-WM\C2LP.PDA.Datas\bin\Release\C2LP.PDA.Datas.dll
+E:\develop\ColdChainLogistics\C2LP-PDA-WM\C2LP.PDA.Datas\bin\Release\C2LP.PDA.Datas.pdb
+E:\develop\ColdChainLogistics\C2LP-PDA-WM\C2LP.PDA.Datas\bin\Release\System.Data.SQLite.dll
+E:\develop\ColdChainLogistics\C2LP-PDA-WM\C2LP.PDA.Datas\obj\Release\ResolveAssemblyReference.cache
+E:\develop\ColdChainLogistics\C2LP-PDA-WM\C2LP.PDA.Datas\obj\Release\C2LP.PDA.Datas.dll
+E:\develop\ColdChainLogistics\C2LP-PDA-WM\C2LP.PDA.Datas\obj\Release\C2LP.PDA.Datas.pdb

@@ -1,0 +1,656 @@
+<?xml version="1.0"?>
+<ArrayOfM_TMSOrder xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <M_TMSOrder>
+    <id>251</id>
+    <orderNo>1116860</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>文荣医院</receiverOrg>
+    <receiverPerson>李三山</receiverPerson>
+    <receiverTel>0579-3220116</receiverTel>
+    <receiverAddress>金华市东莱路768号(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:20</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>252</id>
+    <orderNo>1116816</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>龙泉市医药药材总公司</receiverOrg>
+    <receiverPerson />
+    <receiverTel>0578-7769055</receiverTel>
+    <receiverAddress>龙泉市剑池西路104号</receiverAddress>
+    <beginAt>2014-04-07T17:33:09</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>253</id>
+    <orderNo>1116855</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>金华市第二医院</receiverOrg>
+    <receiverPerson>虞召华</receiverPerson>
+    <receiverTel>0579-2270146</receiverTel>
+    <receiverAddress>金华市西关(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:16</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>254</id>
+    <orderNo>1117222</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>永康中医院</receiverOrg>
+    <receiverPerson>施晓钧</receiverPerson>
+    <receiverTel>0579-7188082</receiverTel>
+    <receiverAddress>永康市南苑路58号(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:20</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>255</id>
+    <orderNo>1116849</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>义乌妇幼保健院</receiverOrg>
+    <receiverPerson>毛康荣</receiverPerson>
+    <receiverTel>0579-85335970</receiverTel>
+    <receiverAddress>义乌市南门街320号(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:21</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>256</id>
+    <orderNo>1116898</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>衢州市柯城区人民医院</receiverOrg>
+    <receiverPerson>徐宏华</receiverPerson>
+    <receiverTel>0570-8571127</receiverTel>
+    <receiverAddress>衢州市柯城区双港西路2号柯城区人民医院药剂科仓库(衢州医药公司仓库)</receiverAddress>
+    <beginAt>2014-04-07T17:33:25</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>257</id>
+    <orderNo>1116881</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>金华职业技术学校医学院教学基地门诊部</receiverOrg>
+    <receiverPerson>张猛炎</receiverPerson>
+    <receiverTel>0579-2338441-8253</receiverTel>
+    <receiverAddress>金华市婺城区人民东路391号(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:26</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>258</id>
+    <orderNo>1116825</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>浦江县医药药材有限公司</receiverOrg>
+    <receiverPerson>周金根</receiverPerson>
+    <receiverTel>0579-84117241</receiverTel>
+    <receiverAddress>浙江省浦江县人民东路110号</receiverAddress>
+    <beginAt>2014-04-07T17:33:17</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>259</id>
+    <orderNo>1116843</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>丽水市中心医院</receiverOrg>
+    <receiverPerson>朱虹云13625883876</receiverPerson>
+    <receiverTel>0578-2681482</receiverTel>
+    <receiverAddress>丽水市灯塔街2号(药库)</receiverAddress>
+    <beginAt>2014-04-07T17:33:27</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>260</id>
+    <orderNo>1116831</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>宁波大学医学院附属医院</receiverOrg>
+    <receiverPerson>张伟</receiverPerson>
+    <receiverTel>0574-87355343-2530</receiverTel>
+    <receiverAddress>宁波市人民路封仁桥巷9号(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:11</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>261</id>
+    <orderNo>1116844</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>衢州市妇幼保健院</receiverOrg>
+    <receiverPerson>陈小荣</receiverPerson>
+    <receiverTel>0570-3049258</receiverTel>
+    <receiverAddress>衢州市蝴蝶路121号(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:29</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>262</id>
+    <orderNo>1116858</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>慈溪市妇幼保健院</receiverOrg>
+    <receiverPerson>孙丰光</receiverPerson>
+    <receiverTel>0574-63922161</receiverTel>
+    <receiverAddress>慈溪市白沙路街道北三环东路(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:20</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>263</id>
+    <orderNo>1116862</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>兰溪市中医院</receiverOrg>
+    <receiverPerson>胡肖军</receiverPerson>
+    <receiverTel>0579-88901071</receiverTel>
+    <receiverAddress>兰溪市溪西新区兰荫北路108号(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:19</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>264</id>
+    <orderNo>1116863</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>宁波市眼科医院</receiverOrg>
+    <receiverPerson>黄雅泉</receiverPerson>
+    <receiverTel>0574-66885127</receiverTel>
+    <receiverAddress>宁波市江东区镇安街36号</receiverAddress>
+    <beginAt>2014-04-07T17:33:11</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>265</id>
+    <orderNo>1117211</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>永康市第五人民医院</receiverOrg>
+    <receiverPerson />
+    <receiverTel>0579-7173226</receiverTel>
+    <receiverAddress>永康市南苑路35号(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:18</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>266</id>
+    <orderNo>1116856</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>浙江省宁海县第一医院</receiverOrg>
+    <receiverPerson>蒋兰芬</receiverPerson>
+    <receiverTel>0574-65578353</receiverTel>
+    <receiverAddress>宁海县城关桃源中路392号(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:24</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>267</id>
+    <orderNo>1116876</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>衢州康复医院</receiverOrg>
+    <receiverPerson>张淑娟</receiverPerson>
+    <receiverTel>0570-8757246</receiverTel>
+    <receiverAddress>衢州市世纪大道672号</receiverAddress>
+    <beginAt>2014-04-07T17:33:44</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>268</id>
+    <orderNo>1116894</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>龙游县人民医院</receiverOrg>
+    <receiverPerson>丁老师</receiverPerson>
+    <receiverTel>0570-7212315</receiverTel>
+    <receiverAddress>龙游县文化东路24号(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:19</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>269</id>
+    <orderNo>1116875</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>舟山市定海广华医院有限责任公司</receiverOrg>
+    <receiverPerson>周凤</receiverPerson>
+    <receiverTel>13454067508</receiverTel>
+    <receiverAddress>舟山市定海区惠飞路468号3幢、4幢</receiverAddress>
+    <beginAt>2014-04-07T17:33:44</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>270</id>
+    <orderNo>1117219</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>奉化市溪口医院</receiverOrg>
+    <receiverPerson>殷静静</receiverPerson>
+    <receiverTel>0574-88859967</receiverTel>
+    <receiverAddress>奉化市溪口镇牌门北路(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:18</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>271</id>
+    <orderNo>1116840</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>衢州市人民医院</receiverOrg>
+    <receiverPerson>朱婉珍</receiverPerson>
+    <receiverTel>0570-3023082</receiverTel>
+    <receiverAddress>衢州钟楼底2号(西药库)</receiverAddress>
+    <beginAt>2014-04-07T17:32:48</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>272</id>
+    <orderNo>1116820</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>浙江金益医药有限公司</receiverOrg>
+    <receiverPerson>黄美爱</receiverPerson>
+    <receiverTel>0579-2103396</receiverTel>
+    <receiverAddress>金华市金东区金园路28号</receiverAddress>
+    <beginAt>2014-04-07T17:33:26</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>273</id>
+    <orderNo>1117223</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>景宁畲族自治县人民医院</receiverOrg>
+    <receiverPerson>林兴宝13754279796</receiverPerson>
+    <receiverTel>0578-5092204</receiverTel>
+    <receiverAddress>景宁畲族自治县鹤溪镇鹤溪中路1号(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:17</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>274</id>
+    <orderNo>1116827</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>奉化市人民医院</receiverOrg>
+    <receiverPerson>李琪波</receiverPerson>
+    <receiverTel>0574-88587066</receiverTel>
+    <receiverAddress>奉化市公园路36号(门诊药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:08</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>275</id>
+    <orderNo>1116847</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>衢州市中医医院</receiverOrg>
+    <receiverPerson />
+    <receiverTel>0570-3084932</receiverTel>
+    <receiverAddress>衢州市衢化路117号（荷花东区）(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:15</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>276</id>
+    <orderNo>1116890</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>义乌市中医医院</receiverOrg>
+    <receiverPerson />
+    <receiverTel>0579-5527365</receiverTel>
+    <receiverAddress>义乌市城中中路15号(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:18</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>277</id>
+    <orderNo>1116832</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>宁波市镇海龙赛医院</receiverOrg>
+    <receiverPerson>郑惠珠</receiverPerson>
+    <receiverTel>0574-86299075</receiverTel>
+    <receiverAddress>宁波市镇海区胜利路74号(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:11</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>278</id>
+    <orderNo>1116865</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>浙江金华广福肿瘤医院</receiverOrg>
+    <receiverPerson />
+    <receiverTel>0579-2287820</receiverTel>
+    <receiverAddress>金华市环城北路1296号(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:05</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>279</id>
+    <orderNo>1116891</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>衢州市中医医院</receiverOrg>
+    <receiverPerson />
+    <receiverTel>0570-3084932</receiverTel>
+    <receiverAddress>衢州市衢化路117号（荷花东区）(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:13</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>280</id>
+    <orderNo>1116897</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>开化县人民医院</receiverOrg>
+    <receiverPerson>何苹芳</receiverPerson>
+    <receiverTel>0570-6019666-6242</receiverTel>
+    <receiverAddress>开化县城关镇解放路125号(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:13</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>281</id>
+    <orderNo>1116896</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>龙游县中医医院</receiverOrg>
+    <receiverPerson>陈芳</receiverPerson>
+    <receiverTel>0570-7211312</receiverTel>
+    <receiverAddress>龙游镇太平路88号(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:28</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>282</id>
+    <orderNo>1116868</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>浦江第二医院</receiverOrg>
+    <receiverPerson>吴主任</receiverPerson>
+    <receiverTel>0579-84253301</receiverTel>
+    <receiverAddress>浦江县黄宅镇黄治路39号</receiverAddress>
+    <beginAt>2014-04-07T17:33:29</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>283</id>
+    <orderNo>1116814</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>浦江县医药药材有限公司</receiverOrg>
+    <receiverPerson>周金根</receiverPerson>
+    <receiverTel>0579-84117241</receiverTel>
+    <receiverAddress>浙江省浦江县人民东路110号</receiverAddress>
+    <beginAt>2014-04-07T17:33:17</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>284</id>
+    <orderNo>1116874</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>宁波市鄞州区钱湖医院</receiverOrg>
+    <receiverPerson>沈宇峰</receiverPerson>
+    <receiverTel>0574-55226368</receiverTel>
+    <receiverAddress>宁波市东钱湖旅游度假区环湖北路426号</receiverAddress>
+    <beginAt>2014-04-07T17:33:34</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>285</id>
+    <orderNo>1116853</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>龙游县人民医院</receiverOrg>
+    <receiverPerson>丁老师</receiverPerson>
+    <receiverTel>0570-7212315</receiverTel>
+    <receiverAddress>龙游县文化东路24号(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:19</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>286</id>
+    <orderNo>1116889</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>丽水市中心医院</receiverOrg>
+    <receiverPerson>朱虹云13625883876</receiverPerson>
+    <receiverTel>0578-2681482</receiverTel>
+    <receiverAddress>丽水市灯塔街2号(药库)</receiverAddress>
+    <beginAt>2014-04-07T17:33:27</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>287</id>
+    <orderNo>1116900</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>金华市婺城区第一人民医院</receiverOrg>
+    <receiverPerson>朱孝琳</receiverPerson>
+    <receiverTel>0579-82667727</receiverTel>
+    <receiverAddress>金华市婺城区汤溪镇南门街83号</receiverAddress>
+    <beginAt>2014-04-07T17:33:29</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>288</id>
+    <orderNo>1116857</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>宁波市第九医院</receiverOrg>
+    <receiverPerson>周培庆</receiverPerson>
+    <receiverTel>0574-87672960</receiverTel>
+    <receiverAddress>宁波市江北区榭嘉路619弄68号住院楼6楼(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:00</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>289</id>
+    <orderNo>1117210</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>宁波大学医学院附属医院</receiverOrg>
+    <receiverPerson>张伟</receiverPerson>
+    <receiverTel>0574-87355343-2530</receiverTel>
+    <receiverAddress>宁波市人民路封仁桥巷9号(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:09</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>290</id>
+    <orderNo>1117215</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>永康中医院</receiverOrg>
+    <receiverPerson>施晓钧</receiverPerson>
+    <receiverTel>0579-7188082</receiverTel>
+    <receiverAddress>永康市南苑路58号(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:20</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>291</id>
+    <orderNo>1117420</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>浙江省丽水市中医院</receiverOrg>
+    <receiverPerson>徐俊燕13567098086</receiverPerson>
+    <receiverTel>0578-2124026</receiverTel>
+    <receiverAddress>丽水市中山街800号(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:29</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>292</id>
+    <orderNo>1117565</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>兰溪市人民医院</receiverOrg>
+    <receiverPerson>宋老师</receiverPerson>
+    <receiverTel>0579-88849430</receiverTel>
+    <receiverAddress>兰溪市郭宅巷8号(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:33:16</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>293</id>
+    <orderNo>1116821</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>浙江英特海斯医药有限公司</receiverOrg>
+    <receiverPerson>朱柏银</receiverPerson>
+    <receiverTel>13675716869</receiverTel>
+    <receiverAddress>衢州柯城区航埠镇集镇功能区纬四路702号</receiverAddress>
+    <beginAt>2014-04-07T17:32:57</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>294</id>
+    <orderNo>1116818</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>浙江众安医药有限责任公司</receiverOrg>
+    <receiverPerson>俞云翔</receiverPerson>
+    <receiverTel>0578-2780183</receiverTel>
+    <receiverAddress>丽水市大众街15号</receiverAddress>
+    <beginAt>2014-04-07T17:33:26</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>295</id>
+    <orderNo>1116809</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司广通分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>浙江省金华监狱医院</receiverOrg>
+    <receiverPerson>张安琴</receiverPerson>
+    <receiverTel>0579-82721269</receiverTel>
+    <receiverAddress>金华市婺城区开化村</receiverAddress>
+    <beginAt>2014-04-07T17:33:28</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>296</id>
+    <orderNo>1117419</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>武义县第一人民医院</receiverOrg>
+    <receiverPerson>郑方平</receiverPerson>
+    <receiverTel>0579-7676382</receiverTel>
+    <receiverAddress>武义县壶山街道城东41号(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:32:49</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>297</id>
+    <orderNo>1116882</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>浙江省金华监狱医院</receiverOrg>
+    <receiverPerson>张安琴</receiverPerson>
+    <receiverTel>0579-82721269</receiverTel>
+    <receiverAddress>金华市婺城区开化村</receiverAddress>
+    <beginAt>2014-04-07T17:33:28</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>298</id>
+    <orderNo>1116859</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>浦江县人民医院</receiverOrg>
+    <receiverPerson>李豪</receiverPerson>
+    <receiverTel>0579-8181307</receiverTel>
+    <receiverAddress>浦江县浦郑路</receiverAddress>
+    <beginAt>2014-04-07T17:33:34</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>299</id>
+    <orderNo>1117218</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>慈溪市第三人民医院</receiverOrg>
+    <receiverPerson>周建英</receiverPerson>
+    <receiverTel>0574-63323548</receiverTel>
+    <receiverAddress>慈溪市周西二路51-139号(西药房)</receiverAddress>
+    <beginAt>2014-04-07T17:32:52</beginAt>
+  </M_TMSOrder>
+  <M_TMSOrder>
+    <id>300</id>
+    <orderNo>1117207</orderNo>
+    <senderOrg>华东医药股份有限公司西药事业部华东医药股份有限公司药品分公司</senderOrg>
+    <senderPerson />
+    <senderTel>0571-85378491,85378492</senderTel>
+    <senderAddress />
+    <receiverOrg>浙江金益医药有限公司</receiverOrg>
+    <receiverPerson>黄美爱</receiverPerson>
+    <receiverTel>0579-2103396</receiverTel>
+    <receiverAddress>金华市金东区金园路28号</receiverAddress>
+    <beginAt>2014-04-07T17:33:26</beginAt>
+  </M_TMSOrder>
+</ArrayOfM_TMSOrder>
+
+-------------------------------------------------------------------------
+

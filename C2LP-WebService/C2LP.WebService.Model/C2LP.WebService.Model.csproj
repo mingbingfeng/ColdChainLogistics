@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B86A18FE-83B5-46F9-91F0-665F2D054F14}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>C2LP.WebService.Model</RootNamespace>
+    <AssemblyName>C2LP.WebService.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model_AiInfo.cs" />
+    <Compile Include="Model_ColdstoragePDA.cs" />
+    <Compile Include="Model_TemporaryPictures.cs" />
+    <Compile Include="Model_ThirdCustomer.cs" />
+    <Compile Include="Model_Destination.cs" />
+    <Compile Include="Model_DeviceRegion.cs" />
+    <Compile Include="Model_Huadong_Tmsorder_Waybillbase.cs" />
+    <Compile Include="Model_Huadong_Tms_Order.cs" />
+    <Compile Include="Model_Region.cs" />
+    <Compile Include="Model_SmsReord.cs" />
+    <Compile Include="Model_Storage_Device.cs" />
+    <Compile Include="Model_ThirdPartOrder.cs" />
+    <Compile Include="Model_UnnecessaryNode.cs" />
+    <Compile Include="Model_Waybill_Postback_Pic.cs" />
+    <Compile Include="MyEnum\Enum_Arrived.cs" />
+    <Compile Include="MyEnum\Enum_Company.cs" />
+    <Compile Include="MyEnum\Enum_HdAlarm.cs" />
+    <Compile Include="Model_ColdStorage.cs" />
+    <Compile Include="Model_CustomerUser.cs" />
+    <Compile Include="Model_Customer.cs" />
+    <Compile Include="Model_NodeHistoryData.cs" />
+    <Compile Include="Model_PDAInfo.cs" />
+    <Compile Include="Model_Waybill_Base.cs" />
+    <Compile Include="Model_Waybill_Node.cs" />
+    <Compile Include="MyEnum\Enum_Active.cs" />
+    <Compile Include="MyEnum\Enum_IsDefault.cs" />
+    <Compile Include="MyEnum\Enum_PointType.cs" />
+    <Compile Include="MyEnum\Enum_Role.cs" />
+    <Compile Include="MyEnum\Enum_StorageType.cs" />
+    <Compile Include="MyEnum\Enum_WaybillStage.cs" />
+    <Compile Include="PDA_Model_Customer.cs" />
+    <Compile Include="PDA_Model_Region.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResultModel.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

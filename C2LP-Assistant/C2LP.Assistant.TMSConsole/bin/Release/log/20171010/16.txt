@@ -1,0 +1,1 @@
+2017-10-10 16:50:17:查询延迟发单的第三方运单:select relationId,customerId from huadong_tms_order where createtime > '2017-08-01' and secretkey = '未知'

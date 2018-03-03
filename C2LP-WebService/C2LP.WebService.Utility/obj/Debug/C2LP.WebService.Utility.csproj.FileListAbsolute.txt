@@ -1,0 +1,8 @@
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.Utility\bin\Debug\C2LP.WebService.Utility.dll
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.Utility\bin\Debug\C2LP.WebService.Utility.pdb
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.Utility\bin\Debug\AutoMapper.dll
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.Utility\bin\Debug\MySql.Data.dll
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.Utility\obj\Debug\C2LP.WebService.Utility.dll
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.Utility\obj\Debug\C2LP.WebService.Utility.pdb
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.Utility\bin\Debug\C2LP.WebService.Utility.dll.config
+E:\develop\ColdChainLogistics\C2LP-WebService\C2LP.WebService.Utility\obj\Debug\C2LP.WebService.Utility.csprojResolveAssemblyReference.cache

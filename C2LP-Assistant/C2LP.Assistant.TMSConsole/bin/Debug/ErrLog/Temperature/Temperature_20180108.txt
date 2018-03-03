@@ -1,0 +1,4 @@
+10:18:25获取冷链数据失败:Unable to connect to any of the specified MySQL hosts.
+10:19:32获取冷链数据失败:Unable to connect to any of the specified MySQL hosts.
+10:22:39获取冷链数据失败:Unable to connect to any of the specified MySQL hosts.
+16:38:27获取冷链数据失败:Unable to connect to any of the specified MySQL hosts.
